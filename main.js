@@ -6,3 +6,8 @@ function age(ymd){
     $today = $y * 10000 + $m * 100 + $d;
     document.write(Math.floor(($today - ymd) / 10000));
 }
+
+function copy2board($str) {
+    navigator.clipboard.writeText($str);
+    alert("クリップボードへコピー: " + $str);
+}
