@@ -11,3 +11,13 @@ function copy2board($str) {
     navigator.clipboard.writeText($str);
     alert("クリップボードへコピー: " + $str);
 }
+
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        let $tags = document.getElementsByClassName("check_sub_window");
+        for(let i = 0; i < $tags.length; i ++) {
+            let $tag = $tags[i];
+            $tag.checked = false;
+        }
+    }
+});
