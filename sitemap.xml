@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<!--  created with free sitemap generation system www.sitemapxml.jp  --> 
+<url>
+  <loc>https://www.pitan76.net/</loc>
+  <priority>1.0</priority>
+  <lastmod>2023-07-25T23:29:38+09:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.pitan76.net/works.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2023-07-25T23:29:38+09:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.pitan76.net/contact.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2023-07-25T23:29:38+09:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.pitan76.net/terms.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2023-07-25T23:29:38+09:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+<url>
+  <loc>https://www.pitan76.net/changelog.html</loc>
+  <priority>0.8</priority>
+  <lastmod>2023-07-25T23:29:38+09:00</lastmod>
+  <changefreq>weekly</changefreq>
+</url>
+
+</urlset>
