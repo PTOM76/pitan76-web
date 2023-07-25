@@ -1,6 +1,22 @@
+#body {
+    padding-bottom: 45px;
+    position: relative;
+    font-family: "Helvetica Neue", "Helvetica", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "Arial", "Yu Gothic", "Meiryo", sans-serif;
+}
+
+a {
+    color:#000fff;
+    text-decoration: none
+}
+
+a:hover {
+    color:#4a54ff;
+    text-decoration: underline;
+}
+
 .main {
     padding:15px;
-    min-height: 700px;
+    min-height: 670px;
     width: 650px;
     text-align: center;
     margin: 0 auto;
@@ -35,6 +51,50 @@ h3 {
     margin-top:0;
     border-bottom:3px solid #0090f2;
     border-left:9px solid #93d3fe;
+}
+
+.modern h3 {
+    font-size: 22px;
+    color: #000;
+    text-shadow: none;
+    margin-top:-15px;
+    padding: 5px;
+    border:none;
+    background: #ffeded;
+    border-left:18px solid #000;
+    text-align: left;
+}
+
+.modern h4 {
+    font-size: 20px;
+    color: #000;
+    text-shadow: none;
+    padding: 3px;
+    margin-top:-15px;
+    border:none;
+    border-bottom:1px solid #000;
+    text-align: left;
+}
+
+.modern img.left {
+    float:left;
+    width:450px;
+    margin-right: 15px;
+}
+
+.modern iframe.left {
+    float:left;
+    width:450px;
+    height:254px;
+    margin-right: 15px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+h5 {
+    font-size: 20px;
 }
 
 .open_sub_window_red {
@@ -123,12 +183,12 @@ h3 {
 }
 @media screen and (max-width: 767px) {
     .sub_window {
-        width: calc(100% - 20px);
+        width: calc(100% - 80px);
     }        
 }
 @media print, (min-width: 768px) {
     .sub_window {
-        width: 90%;
+        width: 80%;
         max-width: 900px;
     }
 }
@@ -167,4 +227,52 @@ h3 {
 .sub_window_content {
     display: table;
     margin: 0px auto;
+}
+
+img#profile_icon {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    float: left;
+    margin-right: 15px;
+}
+
+p#footer {
+    position: absolute;
+    font-size:15px
+    width: 100%;
+}
+
+@media (max-width:767px) {
+    .main {
+        padding: 15px;
+        min-height: 550px;
+        width: 325px;
+    }
+
+    img#profile_icon {
+        float: none;
+        display: block;
+        margin:0 auto;
+    }
+    
+    .contents {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .title {
+        width: 325px;
+        padding-bottom:10px;
+    }
+
+    p#footer {
+        font-size: 13px;
+    }
+
+    .modern img.left {
+        float:none;
+        width:100%;
+        margin-right: 15px;
+    }
 }
