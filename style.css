@@ -33,7 +33,8 @@ a:hover {
     width: 650px;
     text-align: center;
     margin: 0 auto;
-    padding-bottom:20px;
+    padding-top: 5px;
+    padding-bottom: 20px;
 }
 
 h2 {
@@ -178,14 +179,13 @@ h5 {
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
     padding: 30px;
-    max-height: 90%;
+    max-height: 80%;
     background-color: #fff;
     overflow-y: auto;
 }
 @media screen and (max-width: 767px) {
     .sub_window {
         width: calc(100% - 80px);
-        max-height: 80%;
     }        
 }
 @media print, (min-width: 768px) {
@@ -267,7 +267,7 @@ p#footer {
 
     .title {
         width: 325px;
-        padding-bottom:10px;
+        padding-bottom: 10px;
     }
 
     p#footer {
@@ -275,8 +275,8 @@ p#footer {
     }
 
     .modern img.left {
-        float:none;
-        width:100%;
+        float: none;
+        width: 100%;
         margin-right: 15px;
     }
 }
