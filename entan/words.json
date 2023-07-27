@@ -1,0 +1,42 @@
+{
+	"own": {
+		"mean": "を所有している"
+	},
+	"consider": {
+		"mean": "を見なす",
+		"method": "consider $A to be $B",
+		"method_jp": "$Aを$Bと見なす"
+	},
+	"tend": {
+		"mean": "傾向がある"
+	},
+	"concern": {
+		"mean": "心配している"
+	},
+	"involve": {
+		"mean": "を関与させる"
+	},
+	"encourage": {
+		"mean": "を奨励する",
+		"method": "encourage $A to $doA",
+		"method_jp": "$Aを$doAするように奨励する"
+	},
+	"depend": {
+		"mean": "頼る",
+		"method": "depend on $A",
+		"method_jp": "$Aに頼る"
+	},
+	"demand": {
+		"mean": "要求する",
+		"method": "demand that $A (should) $doA",
+		"method_jp": "$Aが$doAするように要求する"
+	},
+	"accord": {
+		"mean": "一致",
+		"method": "in accord with $A",
+		"method_jp": "$Aと一致して"
+	},
+	"situation": {
+		"mean": "状況"
+	}
+}
