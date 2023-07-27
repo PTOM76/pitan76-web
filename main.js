@@ -21,3 +21,14 @@ document.addEventListener('keydown', function(e) {
         }
     }
 });
+
+function getFileContents($path) {
+    let $xhr = new XMLHttpRequest();
+    $xhr.open("GET", $path);
+    $xhr.send();
+
+    $xhr.onreadystatechange = () => {
+        if ($xhr.readyState == 4)
+    }
+
+}
