@@ -30,5 +30,4 @@ function getFileContents($path) {
     $xhr.onreadystatechange = () => {
         if ($xhr.readyState == 4) {}
     }
-
 }
