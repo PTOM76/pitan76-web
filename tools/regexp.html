@@ -13,6 +13,7 @@
         </script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
         <script src="../main.js"></script>
+        <script src="./regexp.js"></script> 
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel="icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-32x32.png" sizes="32x32">
         <link rel="icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-192x192.png" sizes="192x192">
@@ -33,18 +34,28 @@
         </div>
         <div class="title">
             <h2>Pitan76.NET</h2>
-            <span style="color:white;"><a href="../">トップ</a> > Webツール</span>
+            <span style="color:white;"><a href="../">トップ</a> > <a href="./">Webツール</a> > 正規表現チェッカー</span>
         </div>
         <div class="main">
             <div class="contents">
-                <h3>Webツール</h3>
-                <p style="font-size:12px;"><a href="https://pkom.pitan76.net/?Web%E3%83%84%E3%83%BC%E3%83%AB">旧ページ (Pitan's Note)</a></p>
-                <div style="text-align: left;">
-                    簡易的なWebツールを公開しています。<br />
-                    ぜひ、ご利用ください。ライセンス指定がないものはCC0とします。<br />
-                    <p style="font-size:20px;"><a href="./regexp.html">正規表現チェッカー</a></p>
+                <h3>正規表現チェッカー</h3>
+                <div style="text-align: left; font-size: 15px;">
+                    <p>
+                        JSで疑似的にPHPのpreg_matchを再現した正規表現チェッカーです。<br />
+                        あくまで疑似的に再現したものであり、挙動が異なる場合がございます。<br />
+                        デミリタは不要ですが、使用する場合は「/」を使用してください。<br />
+                        また、フラグは「g, i, m, s, u, y」のみ対応しています。<br />
+                        ぜひ、正規表現のチェックにお使いください。<br />
+                    </p>
+                    <textarea id="pattern" style="width:100%;height:22px; font-size: 15px;" placeholder="正規表現を入力してください。"></textarea>
+                    <br />
+                    <textarea id="subject" style="width:100%;height:110px; font-size: 15px;" placeholder="テキストを入力してください。"></textarea>
+                    <br />
+                    <button onclick="regexp_checkbtn()">チェック</button>
+                    <br />
+                    <div id="result" style="font-size: 15px;"></div>
+                    
                 </div>
-                
             </div>
         </div>
         <div id="footer">
