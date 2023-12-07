@@ -2,7 +2,7 @@
 <html lang="ja">
     <head>
         <meta charset="utf-8" />
-        <link rel="stylesheet" href="../style.css" />
+        <link rel="stylesheet" href="../../style.css" />
         <title>Pitan76.NET</title>
         <!-- Google tag (gtag.js) -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-HE7R17Z63N"></script>
@@ -13,48 +13,34 @@
           gtag('config', 'G-HE7R17Z63N');
         </script>
         <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script src="../main.js"></script>
-        <script src="./js/regexp.js"></script> 
+        <script src="../../main.js"></script>
+        <script src="../js/mc/csa.js"></script> 
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel="icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-32x32.png" sizes="32x32">
         <link rel="icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-192x192.png" sizes="192x192">
         <link rel="apple-touch-icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-180x180.png">
     </head>
-    <body background="../bg_image.png">
+    <body background="../../bg_image.png">
         <div>
             <span style="float:left">
             <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="ぴたん(@PitaQ_Modding)の個人サイト「Pitan76.NET」をツイート！" data-url="https://pitan76.net/terms.html" data-hashtags="Pitan76NET" data-lang="ja" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
             </span>
             <span style="float:right">
-                <a target="_blank" href="https://twitter.com/PitaQ_Modding"><img style="width:24px;height:24px;" src="../image/twitter.png" /></a>
-                <a target="_blank" href="https://www.youtube.com/@pitaq8539"><img style="width:24px;height:24px;" src="../image/youtube.png" /></a>
-                <a target="_blank" href="https://github.com/PTOM76"><img style="width:24px;height:24px;" src="../image/github.png" /></a>
-                <a href="javascript:copy2board('00438')"><img style="width:24px;height:24px;" src="../image/discord.png" /></a>
+                <a target="_blank" href="https://twitter.com/PitaQ_Modding"><img style="width:24px;height:24px;" src="../../image/twitter.png" /></a>
+                <a target="_blank" href="https://www.youtube.com/@pitaq8539"><img style="width:24px;height:24px;" src="../../image/youtube.png" /></a>
+                <a target="_blank" href="https://github.com/PTOM76"><img style="width:24px;height:24px;" src="../../image/github.png" /></a>
+                <a href="javascript:copy2board('00438')"><img style="width:24px;height:24px;" src="../../image/discord.png" /></a>
             </span>
             <br />
         </div>
         <div class="title">
             <h2>Pitan76.NET</h2>
-            <span style="color:white;"><a href="../">トップ</a> > <a href="./">Webツール</a> > 正規表現チェッカー</span>
+            <span style="color:white;"><a href="../../">トップ</a> > <a href="../">Webツール</a> > MIDI Editor</span>
         </div>
         <div class="main">
             <div class="contents">
-                <h3>正規表現チェッカー</h3>
+                <h3>MIDI Editor</h3>
                 <div style="text-align: left; font-size: 15px;">
-                    <p>
-                        JSで疑似的にPHPのpreg_matchを再現した正規表現チェッカーです。<br />
-                        あくまで疑似的に再現したものであり、挙動が異なる場合がございます。<br />
-                        デミリタは不要ですが、使用する場合は「/」を使用してください。<br />
-                        また、フラグは「g, i, m, s, u, y」のみ対応しています。<br />
-                        ぜひ、正規表現のチェックにお使いください。<br />
-                    </p>
-                    <textarea id="pattern" style="width:100%;height:22px; font-size: 15px;" placeholder="正規表現を入力してください。"></textarea>
-                    <br />
-                    <textarea id="subject" style="width:100%;height:110px; font-size: 15px;" placeholder="テキストを入力してください。"></textarea>
-                    <br />
-                    <button onclick="regexp_checkbtn()">チェック</button>
-                    <br />
-                    <div id="result" style="font-size: 15px;"></div>
                     
                 </div>
             </div>

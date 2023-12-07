@@ -261,7 +261,7 @@ p#footer {
     .main {
         padding: 15px;
         min-height: 535px;
-        width: 325px;
+        width: 650px;
     }
 
     img#profile_icon {
@@ -276,7 +276,7 @@ p#footer {
     }
 
     .title {
-        width: 325px;
+        width: calc(100% - 50px);
         padding-bottom: 10px;
     }
 
@@ -288,5 +288,11 @@ p#footer {
         float: none;
         width: 100%;
         margin-right: 15px;
+    }
+}
+
+@media (max-width:720px) {
+    .main {
+        width: calc(100% - 35px);
     }
 }

@@ -1,0 +1,149 @@
+<!-- License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/deed.ja) -->
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style.css" />
+        <title>Pitan76.NET</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HE7R17Z63N"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HE7R17Z63N');
+        </script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="../main.js"></script>
+        
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-32x32.png" sizes="32x32">
+        <link rel="icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-192x192.png" sizes="192x192">
+        <link rel="apple-touch-icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-180x180.png">
+    </head>
+    <body background="../bg_image.png">
+        <div>
+            <span style="float:left">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="ぴたん(@PitaQ_Modding)の個人サイト「Pitan76.NET」をツイート！" data-url="https://pitan76.net/terms.html" data-hashtags="Pitan76NET" data-lang="ja" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </span>
+            <span style="float:right">
+                <a target="_blank" href="https://twitter.com/PitaQ_Modding"><img style="width:24px;height:24px;" src="../image/twitter.png" /></a>
+                <a target="_blank" href="https://www.youtube.com/@pitaq8539"><img style="width:24px;height:24px;" src="../image/youtube.png" /></a>
+                <a target="_blank" href="https://github.com/PTOM76"><img style="width:24px;height:24px;" src="../image/github.png" /></a>
+                <a href="javascript:copy2board('00438')"><img style="width:24px;height:24px;" src="../image/discord.png" /></a>
+            </span>
+            <br />
+        </div>
+        <div class="title">
+            <h2>Pitan76.NET</h2>
+            <span style="color:white;"><a href="../">トップ</a> > <a href="./">Webツール</a> > ウェブピアノ</span>
+        </div>
+        <div class="main">
+            <div class="contents">
+                <h3>ウェブピアノ</h3>
+                <style>
+                    piano {
+                        position: relative;
+                    }
+
+                    piano piano-white-keys {
+                        position: absolute;
+                        display: flex;
+                        top: 0%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                    }
+
+                    piano piano-black-keys {
+                        position: absolute;
+                        display: flex;
+                        width: 400px;
+                        text-align: left;
+                        margin-left: 0px;
+                        top: 0%;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        pointer-events: none;
+                    }
+
+                    piano-key, piano-key.white {
+                        display: inline;
+                        width: 50px;
+                        height: 200px;
+                        z-index: 10;
+                        padding: 0;
+                        margin-left: -1px;
+                        margin-right: -1px;
+                        background-color: #fff;
+                        border: 1px solid #000;
+                        border-radius: 0 0 5px 5px;
+                        text-align: center;
+                        vertical-align: middle;
+                        line-height: 200px;
+                        cursor: pointer;
+                    }
+                    piano-key.black {
+                        display: inline;
+                        width: 25px;
+                        height: 125px;
+                        z-index: 11;
+                        padding: 0;
+                        background-color: #000;
+                        border: 1px solid #000;
+                        border-radius: 3px 3px 5px 5px;
+                        line-height: 125px;
+                        cursor: pointer;
+                        pointer-events: auto;
+                        
+                    }
+                    
+                    piano-key:active, piano-key.active {
+                        background-color: #ddd;
+                    }
+                    
+                    piano-key.black:active, piano-key.black.active {
+                        background-color: #444;
+                    }
+                    piano-black-keys span {
+                        z-index: 0;
+                    }
+
+                    
+                </style>
+                <piano>
+                    <piano-white-keys>
+                        <piano-key sound="c4"></piano-key>
+                        <piano-key sound="d4"></piano-key>
+                        <piano-key sound="e4"></piano-key>
+                        <piano-key sound="f4"></piano-key>
+                        <piano-key sound="g4"></piano-key>
+                        <piano-key sound="a4"></piano-key>
+                        <piano-key sound="b4"></piano-key>
+                        <piano-key sound="c5"></piano-key>
+                    </piano-white-keys>
+                    <piano-black-keys>
+                        <span style="margin-left: 32px;"></span>
+                        <piano-key sound="cm4" class="black"></piano-key>
+                        <span style="margin-left: 32px;"></span>
+                        <piano-key sound="dm4" class="black"></piano-key>
+                        <span style="margin-left: 68px;"></span>
+                        <piano-key sound="fm4" class="black"></piano-key>
+                        <span style="margin-left: 29px;"></span>
+                        <piano-key sound="gm4" class="black"></piano-key>
+                        <span style="margin-left: 29px;"></span>
+                        <piano-key sound="am4" class="black"></piano-key>
+                    </piano-black-keys>
+                </piano>
+
+                <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+                <div style="text-align: left; font-size: 15px;">
+                
+                </div>
+            </div>
+            <script src="./js/piano.js"></script> 
+        </div>
+        <div id="footer">
+            <p id="footer" style="color:white;">Copyright ©2023 Pitan | E-mail: admin@pitan76.net<br /><a href="../terms.html">利用規約</a> | <a href="../changelog.html">更新履歴</a> | <a href="../contact.html">連絡</a></p>
+        </div>
+    </body>
+</html>
