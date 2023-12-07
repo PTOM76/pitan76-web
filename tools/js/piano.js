@@ -14,6 +14,24 @@ $keyboard_sounds = {
     "k": "c5",
 }
 
+// キャッシュさせるためにnew Audio()を使う。
+// ただ、同じ音を同時に鳴らすことができないのでこれは使わない
+$sound_audios = {
+    "c4": new Audio('resources/sounds/piano/c4.wav'),
+    "cm4": new Audio('resources/sounds/piano/cm4.wav'),
+    "d4": new Audio('resources/sounds/piano/d4.wav'),
+    "dm4": new Audio('resources/sounds/piano/dm4.wav'),
+    "e4": new Audio('resources/sounds/piano/e4.wav'),
+    "f4": new Audio('resources/sounds/piano/f4.wav'),
+    "fm4": new Audio('resources/sounds/piano/fm4.wav'),
+    "g4": new Audio('resources/sounds/piano/g4.wav'),
+    "gm4": new Audio('resources/sounds/piano/gm4.wav'),
+    "a4": new Audio('resources/sounds/piano/a4.wav'),
+    "am4": new Audio('resources/sounds/piano/am4.wav'),
+    "b4": new Audio('resources/sounds/piano/b4.wav'),
+    "c5": new Audio('resources/sounds/piano/c5.wav'),
+}
+
 var $mousedown = false;
 
 document.addEventListener("mousedown", function(e) {  
