@@ -12,6 +12,14 @@ $keyboard_sounds = {
     "u": "am4",
     "j": "b4",
     "k": "c5",
+    "o": "cm5",
+    "l": "d5",
+    "p": "dm5",
+    ";": "e5",
+    ":": "f5",
+    "]": "fm5",
+    "'": "g5",
+    "]": "gm5",
 }
 
 // キャッシュさせるためにnew Audio()を使う。
@@ -30,6 +38,18 @@ $sound_audios = {
     "am4": new Audio('resources/sounds/piano/am4.wav'),
     "b4": new Audio('resources/sounds/piano/b4.wav'),
     "c5": new Audio('resources/sounds/piano/c5.wav'),
+    "cm5": new Audio('resources/sounds/piano/cm5.wav'),
+    "d5": new Audio('resources/sounds/piano/d5.wav'),
+    "dm5": new Audio('resources/sounds/piano/dm5.wav'),
+    "e5": new Audio('resources/sounds/piano/e5.wav'),
+    "f5": new Audio('resources/sounds/piano/f5.wav'),
+    "fm5": new Audio('resources/sounds/piano/fm5.wav'),
+    "g5": new Audio('resources/sounds/piano/g5.wav'),
+    "gm5": new Audio('resources/sounds/piano/gm5.wav'),
+    "a5": new Audio('resources/sounds/piano/a5.wav'),
+    "am5": new Audio('resources/sounds/piano/am5.wav'),
+    "b5": new Audio('resources/sounds/piano/b5.wav'),
+    "c6": new Audio('resources/sounds/piano/c6.wav'),
 }
 
 var $mousedown = false;
