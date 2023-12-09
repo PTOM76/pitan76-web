@@ -17,14 +17,25 @@ $keyboard_sounds = {
     "p": "dm5",
     ";": "e5",
     ":": "f5",
-    "]": "fm5",
-    "'": "g5",
-    "]": "gm5",
+    "[": "fm5",
+    "]": "g5",
 }
 
 // キャッシュさせるためにnew Audio()を使う。
 // ただ、同じ音を同時に鳴らすことができないのでこれは使わない
 $sound_audios = {
+    "c3": new Audio('resources/sounds/piano/c3.wav'),
+    "cm3": new Audio('resources/sounds/piano/cm3.wav'),
+    "d3": new Audio('resources/sounds/piano/d3.wav'),
+    "dm3": new Audio('resources/sounds/piano/dm3.wav'),
+    "e3": new Audio('resources/sounds/piano/e3.wav'),
+    "f3": new Audio('resources/sounds/piano/f3.wav'),
+    "fm3": new Audio('resources/sounds/piano/fm3.wav'),
+    "g3": new Audio('resources/sounds/piano/g3.wav'),
+    "gm3": new Audio('resources/sounds/piano/gm3.wav'),
+    "a3": new Audio('resources/sounds/piano/a3.wav'),
+    "am3": new Audio('resources/sounds/piano/am3.wav'),
+    "b3": new Audio('resources/sounds/piano/b3.wav'),
     "c4": new Audio('resources/sounds/piano/c4.wav'),
     "cm4": new Audio('resources/sounds/piano/cm4.wav'),
     "d4": new Audio('resources/sounds/piano/d4.wav'),

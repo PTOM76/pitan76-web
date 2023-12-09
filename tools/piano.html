@@ -46,7 +46,7 @@
                         margin-right: 3px;
                     }
                     .main {
-                        width: 85%;
+                        width: 95%;
                     }
                     piano {
                         position: relative;
@@ -63,7 +63,7 @@
                     piano piano-black-keys {
                         position: absolute;
                         display: flex;
-                        width: 750px;
+                        width: 1098px;
                         text-align: left;
                         margin-left: 0px;
                         top: 0%;
@@ -118,6 +118,13 @@
                 </style>
                 <piano>
                     <piano-white-keys>
+                        <piano-key sound="c3"></piano-key>
+                        <piano-key sound="d3"></piano-key>
+                        <piano-key sound="e3"></piano-key>
+                        <piano-key sound="f3"></piano-key>
+                        <piano-key sound="g3"></piano-key>
+                        <piano-key sound="a3"></piano-key>
+                        <piano-key sound="b3"></piano-key>
                         <piano-key sound="c4"></piano-key>
                         <piano-key sound="d4"></piano-key>
                         <piano-key sound="e4"></piano-key>
@@ -136,6 +143,17 @@
                     </piano-white-keys>
                     <piano-black-keys>
                         <span style="margin-left: 32px;"></span>
+                        <piano-key sound="cm3" class="black"></piano-key>
+                        <span style="margin-left: 32px;"></span>
+                        <piano-key sound="dm3" class="black"></piano-key>
+                        <span style="margin-left: 67px;"></span>
+                        <piano-key sound="fm3" class="black"></piano-key>
+                        <span style="margin-left: 29px;"></span>
+                        <piano-key sound="gm3" class="black"></piano-key>
+                        <span style="margin-left: 29px;"></span>
+                        <piano-key sound="am3" class="black"></piano-key>
+
+                        <span style="margin-left: 68px;"></span>
                         <piano-key sound="cm4" class="black"></piano-key>
                         <span style="margin-left: 32px;"></span>
                         <piano-key sound="dm4" class="black"></piano-key>
@@ -163,7 +181,11 @@
                 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
                 <div style="text-align: left; font-size: 15px;">
-                
+                    ピアノの音を鳴らすことができます。<br />
+                    <br />
+                    <h3 class="modern">キーボード演奏</h3>
+                    Aから]までのキーが白鍵、Wから[までのキーが黒鍵に対応しています。<br />
+                    キーボードでの演奏はC4からG5までの範囲のみです。<br />
                 </div>
             </div>
             <script src="./js/piano.js"></script>
