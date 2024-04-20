@@ -1,0 +1,46 @@
+<!doctype html>
+<meta charset="utf-8">
+
+<script async type="module">
+    import {transpile, ScriptTarget} from "https://esm.sh/typescript@5.3.3?bundle&target=esnext";
+    import {minify_sync} from "https://esm.sh/terser@5.27.0?bundle&target=esnext";
+
+    for(const {type, textContent} of document.getElementsByTagName("script")){
+        if(type !== "text/typescript" || !textContent){
+            continue;
+        }
+
+        const js = transpile(textContent, {
+            target: ScriptTarget.ESNext
+        });
+
+        const {code} = minify_sync(js, {
+            module: true
+        });
+
+        await import(`data:text/javascript;base64,${btoa([...new TextEncoder().encode(code)].map(v => String.fromCharCode(v)).join(""))}`);
+    }
+</script>
+
+<script type="text/typescript">
+    interface Test{
+        a: string;
+        b: number;
+        c: boolean;
+    }
+
+    const test:Test = {
+        a: "aaa",
+        b: 111,
+        c: true
+    };
+
+    await new Promise<void>(done => setTimeout(done, 100));
+    console.log(test);
+    document.getElementById("status").textContent = "Complete!";
+</script>
+
+<title>TypeScript on Web</title>
+<h1>TypeScript on Web</h1>
+<p>TypeScript realtime transpile and execution demo.</p>
+<p>[Status] <span id="status">Processing...</span></p>
