@@ -1,0 +1,76 @@
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../../style.css" />
+        <title>Pitan76.NET</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HE7R17Z63N"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HE7R17Z63N');
+        </script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="../../main.js"></script>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-32x32.png" sizes="32x32">
+        <link rel="icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-192x192.png" sizes="192x192">
+        <link rel="apple-touch-icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-180x180.png">
+    </head>
+    <body background="../../bg_image.png">
+        <div>
+            <span style="float:left">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="ぴたん(@PitaQ_Modding)の個人サイト「Pitan76.NET」をツイート！" data-url="https://pitan76.net/terms.html" data-hashtags="Pitan76NET" data-lang="ja" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </span>
+            <span style="float:right">
+                <a target="_blank" href="https://twitter.com/PitaQ_Modding"><img style="width:24px;height:24px;" src="../image/twitter.png" /></a>
+                <a target="_blank" href="https://www.youtube.com/@pitaq8539"><img style="width:24px;height:24px;" src="../image/youtube.png" /></a>
+                <a target="_blank" href="https://github.com/PTOM76"><img style="width:24px;height:24px;" src="../image/github.png" /></a>
+                <a href="javascript:copy2board('00438')"><img style="width:24px;height:24px;" src="../image/discord.png" /></a>
+            </span>
+            <br />
+        </div>
+        <div class="title">
+            <h2>Pitan76.NET</h2>
+            <span style="color:white;"><a href="../../">トップ</a> > <a href="../">Webゲーム</a> > レンガ・クラッシャー</span>
+        </div>
+        <div class="main">
+            <div class="contents">
+                <h3>レンガ・クラッシャー</h3>
+                <canvas style="text-align:center;margin:auto 0;" id="canvas" width="300" height="300"></canvas>
+                <div style="text-align: left;">
+                    <p style="font-size:20px;">
+
+                        <script>
+                            const canvas = document.getElementById("canvas");
+                            ctx = canvas.getContext("2d");
+                            ctx.beginPath();
+                            ctx.rect(50, 100, 200, 200);
+                            //ctx.arc(canvas.width/ 1.5, canvas.height / 2, 75, 0, Math.PI*2);
+                            ctx.fillStyle = "#ba3500";
+                            ctx.fill();
+
+                            document.addEventListener("click", function(e) {
+                                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                                ctx.beginPath();
+                                ctx.rect(50+5, 100+5, 190, 190);
+                                //ctx.arc(canvas.width/ 1.5, canvas.height / 2, 75, 0, Math.PI*2);
+                                ctx.fillStyle = "#ba3500";
+                                ctx.fill();
+                            });
+
+                            //ctx.stroke();
+                            ctx.closePath();
+                            
+                        </script>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        <div id="footer">
+            <p id="footer" style="color:white;">Copyright ©2023-2024 Pitan | E-mail: admin@pitan76.net<br /><a href="../terms.html">利用規約</a> | <a href="../changelog.html">更新履歴</a> | <a href="../contact.html">連絡</a></p>
+        </div>
+    </body>
+</html>

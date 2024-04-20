@@ -1,0 +1,252 @@
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../../style.css" />
+        <title>Pitan76.NET</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HE7R17Z63N"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HE7R17Z63N');
+        </script>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="../../main.js"></script>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-32x32.png" sizes="32x32">
+        <link rel="icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-192x192.png" sizes="192x192">
+        <link rel="apple-touch-icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-180x180.png">
+    </head>
+    <body background="../../bg_image.png">
+        <div>
+            <span style="float:left">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="ぴたん(@PitaQ_Modding)の個人サイト「Pitan76.NET」をツイート！" data-url="https://pitan76.net/terms.html" data-hashtags="Pitan76NET" data-lang="ja" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </span>
+            <span style="float:right">
+                <a target="_blank" href="https://twitter.com/PitaQ_Modding"><img style="width:24px;height:24px;" src="../image/twitter.png" /></a>
+                <a target="_blank" href="https://www.youtube.com/@pitaq8539"><img style="width:24px;height:24px;" src="../image/youtube.png" /></a>
+                <a target="_blank" href="https://github.com/PTOM76"><img style="width:24px;height:24px;" src="../image/github.png" /></a>
+                <a href="javascript:copy2board('00438')"><img style="width:24px;height:24px;" src="../image/discord.png" /></a>
+            </span>
+            <br />
+        </div>
+        <div class="title">
+            <h2>Pitan76.NET</h2>
+            <span style="color:white;"><a href="../../">トップ</a> > <a href="../">Webゲーム</a> > レンガ・クラッシャー</span>
+        </div>
+        <div class="main">
+            <div class="contents">
+                <h3>レンガ・クラッシャー</h3>
+                <div style="text-align: left;">
+                    <p style="font-size:20px;">
+                        <canvas id="canvas" width="400" height="400"></canvas>
+
+                        <script>
+                            // キャンバスの取得
+                            const canvas = document.getElementById('canvas');
+
+                            // 2dコンテキストの取得 コンテキストとは、描画のための情報を持ったオブジェクト
+                            const ctx = canvas.getContext('2d');
+
+                            // ボールの半径
+                            const ballRadius = 10;
+
+                            // ボールの初期位置
+                            let x = canvas.width/2;
+                            let y = canvas.height-30;
+                            // ボールの移動量
+                            let dx = 2;
+                            let dy = -2;
+
+                            // パドルの設定 (パドルはボールを打ち返すためのもの)
+                            const paddleHeight = 10;
+                            const paddleWidth = 75;
+                            let paddleX = (canvas.width-paddleWidth)/2;
+                            let rightPressed = false;
+                            let leftPressed = false;
+                            const brickRowCount = 3;
+                            const brickColumnCount = 5;
+                            const brickWidth = 75;
+                            const brickHeight = 20;
+                            const brickPadding = 10;
+                            const brickOffsetTop = 30;
+                            const brickOffsetLeft = 30;
+                            let score = 0;
+                            let lives = 3;
+
+                            const bricks = [];
+                            for(let c=0; c<brickColumnCount; c++) {
+                                bricks[c] = [];
+                                for(let r=0; r<brickRowCount; r++) {
+                                    bricks[c][r] = { x: 0, y: 0, status: 1 };
+                                }
+                            }
+
+                            document.addEventListener("keydown", keyDownHandler, false);
+                            document.addEventListener("keyup", keyUpHandler, false);
+                            document.addEventListener("mousemove", mouseMoveHandler, false);
+
+                            function keyDownHandler(e) {
+                                if(e.key == "Right" || e.key == "ArrowRight") {
+                                    rightPressed = true;
+                                }
+                                else if(e.key == "Left" || e.key == "ArrowLeft") {
+                                    leftPressed = true;
+                                }
+                            }
+
+                            function keyUpHandler(e) {
+                                if(e.key == "Right" || e.key == "ArrowRight") {
+                                    rightPressed = false;
+                                }
+                                else if(e.key == "Left" || e.key == "ArrowLeft") {
+                                    leftPressed = false;
+                                }
+                            }
+
+                            function mouseMoveHandler(e) {
+                                const relativeX = e.clientX - canvas.offsetLeft;
+                                if(relativeX > 0 && relativeX < canvas.width) {
+                                    paddleX = relativeX - paddleWidth/2;
+                                }
+                            }
+
+                            function collisionDetection() {
+                                for(let c=0; c<brickColumnCount; c++) {
+                                    for(let r=0; r<brickRowCount; r++) {
+                                        const b = bricks[c][r];
+                                        if(b.status == 1) {
+                                            if(x > b.x && x < b.x+brickWidth && y > b.y && y < b.y+brickHeight) {
+                                                dy = -dy;
+                                                b.status = 0;
+                                                score++;
+                                                if(score == brickRowCount*brickColumnCount) {
+                                                    alert("YOU WIN, CONGRATS!");
+                                                    document.location.reload();
+                                                }
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+
+                            function drawBall() {
+                                // ボールの描画
+
+                                // beginPath() パスの開始
+                                // パスとは、線や曲線などの図形を描画するためのもの
+                                // 開始すると、パスは空になる
+                                // これを呼び出さないと、前回のパスの続きから描画される
+                                // クソみたいな仕様だけど、仕方ない
+                                ctx.beginPath();
+                                // arc(x, y, radius, startAngle, endAngle, anticlockwise)
+                                // 円弧を描画する
+                                ctx.arc(x, y, ballRadius, 0, Math.PI*2);
+                                // fillStyle パスの塗りつぶしの色を指定
+                                ctx.fillStyle = "#0095DD";
+                                // fill() パスを塗りつぶす
+                                ctx.fill();
+                                // ctx.stroke(); 線
+
+                                // closePath() パスを閉じる
+                                ctx.closePath();
+                            }
+
+                            function drawPaddle() {
+                                ctx.beginPath();
+                                ctx.rect(paddleX, canvas.height-paddleHeight, paddleWidth, paddleHeight);
+                                ctx.fillStyle = "#0095DD";
+                                ctx.fill();
+                                ctx.closePath();
+                            }
+
+                            function drawBricks() {
+                                for(let c=0; c<brickColumnCount; c++) {
+                                    for(let r=0; r<brickRowCount; r++) {
+                                        if(bricks[c][r].status == 1) {
+                                            const brickX = (r*(brickWidth+brickPadding))+brickOffsetLeft;
+                                            const brickY = (c*(brickHeight+brickPadding))+brickOffsetTop;
+                                            bricks[c][r].x = brickX;
+                                            bricks[c][r].y = brickY;
+                                            ctx.beginPath();
+                                            ctx.rect(brickX, brickY, brickWidth, brickHeight);
+                                            ctx.fillStyle = "#0095DD";
+                                            ctx.fill();
+                                            ctx.closePath();
+                                        }
+                                    }
+                                }
+                            }
+
+                            function drawScore() {
+                                ctx.font = "16px Arial";
+                                ctx.fillStyle = "#0095DD";
+                                ctx.fillText("Score: "+score, 8, 20);
+                            }
+
+                            function drawLives() {
+                                ctx.font = "16px Arial";
+                                ctx.fillStyle = "#0095DD";
+                                ctx.fillText("Lives: "+lives, canvas.width-65, 20);
+                            }
+
+                            function draw() {
+                                ctx.clearRect(0, 0, canvas.width, canvas.height);
+                                drawBricks();
+                                drawBall();
+                                drawPaddle();
+                                drawScore();
+                                drawLives();
+                                collisionDetection();
+
+                                if(x + dx > canvas.width-ballRadius || x + dx < ballRadius) {
+                                    dx = -dx;
+                                }
+                                if(y + dy < ballRadius) {
+                                    dy = -dy;
+                                }
+                                else if(y + dy > canvas.height-ballRadius) {
+                                    if(x > paddleX && x < paddleX + paddleWidth) {
+                                        dy = -dy;
+                                    }
+                                    else {
+                                        lives--;
+                                        if(!lives) {
+                                            alert("GAME OVER");
+                                            document.location.reload();
+                                        }
+                                        else {
+                                            x = canvas.width/2;
+                                            y = canvas.height-30;
+                                            dx = 3;
+                                            dy = -3;
+                                            paddleX = (canvas.width-paddleWidth)/2;
+                                        }
+                                    }
+                                }
+
+                                if(rightPressed && paddleX < canvas.width-paddleWidth) {
+                                    paddleX += 7;
+                                }
+                                else if(leftPressed && paddleX > 0) {
+                                    paddleX -= 7;
+                                }
+
+                                x += dx;
+                                y += dy;
+                                requestAnimationFrame(draw);
+                            }
+
+                            draw();
+                        </script>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+        <div id="footer">
+            <p id="footer" style="color:white;">Copyright ©2023-2024 Pitan | E-mail: admin@pitan76.net<br /><a href="../terms.html">利用規約</a> | <a href="../changelog.html">更新履歴</a> | <a href="../contact.html">連絡</a></p>
+        </div>
+    </body>
+</html>
