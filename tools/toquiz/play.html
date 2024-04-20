@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>匿名クイズ | Pitan76.NET</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="">匿名クイズ</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://pitan76.net/">ホーム</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">作成</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">一覧</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <script>
+        let $url = new URL(location.href);
+        let $params = $url.searchParams;
+
+        var $q, $t, $s, $c;
+        if ($params.has('q')) {
+            $q = $params.get('q');
+            $t = $params.get('t');
+            $s = $params.getAll('s[]');
+            $c = $params.get('c');
+
+            document.addEventListener('DOMContentLoaded', function () {
+                $question = document.getElementById('question');
+                $question.innerText = $q;
+            });
+        }
+    </script>
+
+    <div class="container" id="main">
+        <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="../../">トップ</a></li>
+                <li class="breadcrumb-item"><a href="../">Webツール</a></li>
+                <li class="breadcrumb-item active" aria-current="page">匿名クイズ</li>
+            </ol>
+        </nav>
+
+        <h1>匿名クイズ</h1>
+            <p>以下のフォームに回答を入力してください。</p>
+            <form action="https://pitan76.net/tools/onsys/quizhub/play.html" method="get">
+                <!-- PHPは使いません、JSのみ -->
+                <div class="alert alert-light" role="alert">
+                    問題：<span id="question"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label for="answer" class="form-label">回答</label>
+                    <input type="text" class="form-control" id="answer" name="a" required />
+                </div>
+
+                <input type="hidden" name="s[]" value="選択肢" />
+            </form>
+
+            <hr />
+            <div class="col-12">
+                <button type="submit" class="btn btn-primary" style="margin-top: -20px;">回答</button>
+            </div>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
