@@ -38,7 +38,7 @@
         </nav>
 
         <script>
-            var API_URL = "https://script.google.com/macros/s/AKfycbzmZHeYHFKGyu9uwFErDy0g_9EnvcIOdJguBUQ8R6tH8i8zyTTgefJ0DApTPCJf5bGoYQ/exec";
+            var API_URL = "https://script.google.com/macros/s/AKfycbxBFZ_kl9FYP1BbLauSbAgPznEHzEIfFhIbTMpB-kJiScaAD03EERP5K6nq1zlrv670/exec";
 
             var $xhr = new XMLHttpRequest();
 
@@ -46,7 +46,9 @@
             $xhr.onload = function(e) {
                 let json = e.target.responseText;
                 let obj = JSON.parse(json);
-                obj.forEach(p => {
+                Object.keys(obj).forEach((p, index) => {
+                    let data = obj[p];
+
                     let param = decodeURI(p);
                     let url_str = "https://pitan76.net/tools/toquiz/play.html" + param;
                     let encoded_url_str = "https://pitan76.net/tools/toquiz/play.html" + encodeURI(param);
@@ -61,13 +63,15 @@
                     let $td2 = document.createElement("td");
                     let $td3 = document.createElement("td");
 
-                    $th.textContent = obj.indexOf(p) + 1;
+                    $th.textContent = index + 1;
                     $td1.innerHTML = "<a href='" + encoded_url_str + "'>" + $q + "</a>";
-                    $td2.innerHTML = "[<a href='" + encoded_url_str + "'>開く</a> | <a href='" + encoded_url_str + "&do=remix'>リミックス</a>]";
+                    $td2.innerHTML = data['createdAt'];
+                    $td3.innerHTML = "[<a href='" + encoded_url_str + "'>開く</a> | <a href='" + encoded_url_str + "&do=remix'>リミックス</a>]";
 
                     $tr.appendChild($th);
                     $tr.appendChild($td1);
                     $tr.appendChild($td2);
+                    $tr.appendChild($td3);
 
                     document.getElementById("quiz_list").appendChild($tr);
 
@@ -90,6 +94,7 @@
                   <tr>
                     <th scope="col">#</th>
                     <th scope="col">問題</th>
+                    <th scope="col">作成日時</th>
                     <th scope="col">操作</th>
                   </tr>
                 </thead>
