@@ -9,6 +9,29 @@
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="../../lib/md5.js"></script>
+
+    
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            let $form = document.getElementById('answer_form');
+            $form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                let $answer = document.getElementById('answer').value;
+                let $encoded_c = CybozuLabs.MD5.calc($c);
+                let $correct = $encoded_c;
+                let $result = document.createElement('div');
+                $result.classList.add('alert');
+                if ($answer == $correct) {
+                    $result.classList.add('alert-success');
+                    $result.innerText = '正解です！';
+                } else {
+                    $result.classList.add('alert-danger');
+                    $result.innerText = '不正解です。正解は「' + $correct + '」です。';
+                }
+                $form.appendChild($result);
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -71,7 +94,7 @@
 
         <h1>匿名クイズ</h1>
             <p>以下のフォームに回答を入力してください。</p>
-            <form action="" method="get">
+            <form action="" method="get" id="answer_form">
                 <!-- PHPは使いません、JSのみ -->
                 <div class="alert alert-light" role="alert">
                     問題：<span id="question"></span>
@@ -89,32 +112,10 @@
 
                 <hr />
                 <div class="col-12">
-                    <button type="submit" class="btn btn-primary" style="margin-top: -20px;">回答</button>
+                    <button type="submit" class="btn btn-primary">回答</button>
                 </div>
             </form>
     </div>
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            let $form = document.querySelector('form');
-            $form.addEventListener('submit', function (e) {
-                e.preventDefault();
-                let $answer = document.getElementById('answer').value;
-                let $encoded_c = CybozuLabs.MD5.calc($c);
-                let $correct = $encoded_c;
-                let $result = document.createElement('div');
-                $result.classList.add('alert');
-                if ($answer == $correct) {
-                    $result.classList.add('alert-success');
-                    $result.innerText = '正解です！';
-                } else {
-                    $result.classList.add('alert-danger');
-                    $result.innerText = '不正解です。正解は「' + $correct + '」です。';
-                }
-                $form.appendChild($result);
-            });
-        });
-    </script>
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
