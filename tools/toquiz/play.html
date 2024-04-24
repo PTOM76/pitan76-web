@@ -5,9 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>匿名クイズ | Pitan76.NET</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="../../lib/css/bootstrap/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../../lib/js/jquery/jquery.min.js"></script>
     <script src="../../lib/md5.js"></script>
 </head>
 
@@ -51,7 +51,7 @@
             $s = $params.getAll('s[]');
             $c = $params.get('c');
 
-            if ($params)
+            //if ($params)
 
             document.addEventListener('DOMContentLoaded', function () {
                 $question = document.getElementById('question');
@@ -59,25 +59,24 @@
             });
 
             
-        document.addEventListener('DOMContentLoaded', function () {
-            let $form = document.getElementById('answer_form');
-            $form.addEventListener('submit', function (e) {
-                e.preventDefault();
-                let $answer = document.getElementById('answer').value;
-                let $encoded_c = CybozuLabs.MD5.calc($c);
-                let $correct = $encoded_c;
-                let $result = document.createElement('div');
-                $result.classList.add('alert');
-                if ($answer == $correct) {
-                    $result.classList.add('alert-success');
-                    $result.innerText = '正解です！';
-                } else {
-                    $result.classList.add('alert-danger');
-                    $result.innerText = '不正解です。';
-                }
-                $form.appendChild($result);
+            document.addEventListener('DOMContentLoaded', function () {
+                let $form = document.getElementById('answer_form');
+                $form.addEventListener('submit', function (e) {
+                    e.preventDefault();
+                    let $rawanswer = document.getElementById('answer').value;
+                    let $answer = CybozuLabs.MD5.calc($rawanswer);
+                    let $result = document.createElement('div');
+                    $result.classList.add('alert');
+                    if ($answer == $c) {
+                        $result.classList.add('alert-success');
+                        $result.innerText = '正解です！';
+                    } else {
+                        $result.classList.add('alert-danger');
+                        $result.innerText = '不正解です。';
+                    }
+                    $form.appendChild($result);
+                });
             });
-        });
         }
     </script>
 
