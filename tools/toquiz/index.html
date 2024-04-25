@@ -54,6 +54,7 @@
                     //document.getElementById('main').style.display = 'none';
                     document.getElementById('success').style.display = 'block';
                     let $generated_url_tag = document.getElementById('generated_url');
+                    let $share_btn = document.getElementById('share_btn');
                     let $encoded_c = CybozuLabs.MD5.calc($c);
 
                     let $new_param_str = "?q=" + $q + "&t=" + $t + "&c=" + $encoded_c;
@@ -68,6 +69,11 @@
                     
                     $generated_url_tag.href = $url;
                     $generated_url_tag.innerText = decodeURI($url);
+
+                    let $share_btn_url = $share_btn.href;
+                    $share_btn_url = $share_btn_url.replace("{url_string}", $url);
+                    $share_btn_url = $share_btn_url.replace("{text_string}", "匿名クイズでクイズを作成しました！");
+                    $share_btn.href = $share_btn_url;
 
                     var $xhr = new XMLHttpRequest();
                     
@@ -91,6 +97,9 @@
             <div class="alert alert-success" role="alert" id="success" style="display: none;">
                 クイズを作成しました。以下のリンクを共有してください。<br />
                 <a id="generated_url" href="?q=問題&t=回答手段&s[]=選択肢&s[]=選択肢&s[]=選択肢&c=正解">https://pitan76.net/tools/toquiz/play.html?q=問題&t=回答手段&s[]=選択肢&s[]=選択肢&s[]=選択肢&c=正解</a>
+                <br />
+                <br />
+                <a id="share_btn" class="share_btn" target="_blank" href="https://twitter.com/share?url={url_string}&amp;text={text_string}"><img src="../../image/twitter.png" alt="share on twitter" width="40" height="40"></a>
             </div>
 
             <h1>匿名クイズ</h1>
