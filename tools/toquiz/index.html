@@ -71,7 +71,7 @@
                     $generated_url_tag.innerText = decodeURI($url);
 
                     let $share_btn_url = $share_btn.href;
-                    $share_btn_url = $share_btn_url.replace("{url_string}", $url.replace(/&/g, "&amp;"));
+                    $share_btn_url = $share_btn_url.replace("{url_string}", "https://pitan76.net/tools/toquiz/play.html" + encodeURIComponent($new_param_str));
                     $share_btn_url = $share_btn_url.replace("{text_string}", "匿名クイズでクイズを作成しました！");
                     $share_btn.href = $share_btn_url;
 
