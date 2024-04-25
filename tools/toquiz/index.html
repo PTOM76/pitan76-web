@@ -96,14 +96,14 @@
             <h1>匿名クイズ</h1>
             
             <div class="alert alert-primary" role="alert">
-                このツールは、クイズを作成・編集・公開するためのツールです。作成したクイズは、一覧に登録され、他のユーザーが利用できるようになります。
+                このツールは、クイズを作成するためのツールです。作成したクイズは、一覧に登録され、他のユーザーが利用できるようになります。
                 <br />
-                ※このツールは、まだ開発中です。機能が変更・追加・削除される可能性があります。
+                ※このツールは、まだ開発中です。削除機能は追加していないため、個人情報などは入力しないでください。また、機能が変更・追加・削除される可能性があります。
             </div>
             <form class="row g-3">
                 <div class="col-12">
                     <label for="quiz_questions" class="form-label">問題</label>
-                    <textarea class="form-control" name="q" id="quiz_questions"></textarea>
+                    <textarea class="form-control" name="q" id="quiz_questions" required></textarea>
                 </div>
 
                 <!-- 入力欄か選択肢を選ぶ -->
@@ -158,7 +158,7 @@
                         });
                     </script>
                     <br /><br />
-                    <label for="quiz_correct" class="form-label">正しい選択 (任意)</label>
+                    <label for="quiz_correct" class="form-label">正しい選択</label>
                     <select class="form-select" id="quiz_correct">
                         <option value="none">-</option>
                     </select>
@@ -178,7 +178,7 @@
                 </div>
 
                 <div class="col-12" id="quiz_text">
-                    <label for="quiz_correct2" class="form-label">正しい答え (任意)</label>
+                    <label for="quiz_correct2" class="form-label">正しい答え</label>
                     <textarea class="form-control" name="c" id="quiz_correct2"></textarea>
                 </div>
 
