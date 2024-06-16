@@ -1,0 +1,558 @@
+{
+    "pukiwiki_accordion_plugin": {
+        "name": "Accordion",
+        "description": "見出し版折りたたみプラグイン",
+        "version": "1.5",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/accordion.inc.php",
+        "license": "GPLv3",
+        "createAt": "2021/07/06",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/accordion.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_alert_plugin": {
+        "name": "Alert",
+        "description": "JavaScriptのalert()関数を用いたダイアログ表示プラグイン",
+        "version": "1.0.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/alert.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/alert.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_blink_plugin": {
+        "name": "BlogLink",
+        "description": "ブログ風なページのリンクを設置するプラグイン",
+        "version": "1.1f",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/blink.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/blink.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_bcontents_plugin": {
+        "name": "BlogContents",
+        "description": "折りたたみ機能付き目次プラグイン",
+        "version": "1.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/bcontents.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/bcontents.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_bgcolor_plugin": {
+        "name": "BGColor",
+        "description": "背景色を変更するプラグイン",
+        "version": "1.0.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/bgcolor.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/bgcolor.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_brecent_plugin": {
+        "name": "BlogRecent",
+        "description": "ブログ風更新したページ一覧表示するプラグイン (Origin: recent)",
+        "version": "1.1",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/brecent.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/brecent.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_bot_plugin": {
+        "name": "Bot",
+        "description": "PukiWikiでBot APIを提供するためのプラグイン",
+        "version": "1.3",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/bot.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/bot.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_button_plugin": {
+        "name": "Button",
+        "description": "ボタン(Button)プラグイン (1.5.X対応版)",
+        "version": "1.0.0",
+        "author": "PitaQ, reimy",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/button.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/button.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_submit_plugin": {
+        "name": "Submit",
+        "description": "ボタン(Submit)プラグイン (1.5.X対応版)",
+        "version": "1.0.0",
+        "author": "PitaQ, reimy",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/submit.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/button.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_checkarea_plugin": {
+        "name": "CheckArea",
+        "description": "チェックボックスプラグイン",
+        "version": "1.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/checkarea.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/checkarea.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_commentplus_plugin": {
+        "name": "CommentPlus",
+        "description": "コメントの機能拡張プラグイン (Origin: Comment)",
+        "version": "1.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/commentplus.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/commentplus.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_ctrlcmt_plugin": {
+        "name": "CtrlCmt",
+        "description": "管理画面で設定できる機能拡張版コメントプラグイン (Origin: comment)",
+        "version": "1.02",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/ctrlcmt.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/ctrlcmt.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_easyedit_plugin": {
+        "name": "EasyEdit",
+        "description": "CKEditor版編集プラグイン (Origin: edit, guiedit)",
+        "version": "1.0.9",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/easyedit.zip",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/easyedit.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_exrules2_plugin": {
+        "name": "exrules2",
+        "description": "ページ内でユーザ定義ルールを設定 (Origin: exrules)",
+        "version": "1.0.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/exrules2.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/exrules2.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_footer_plugin": {
+        "name": "Footer",
+        "description": "PukiWiki Plus!のようなフッターを追加するプラグイン",
+        "version": "1.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/footer.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/footer.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_header_plugin": {
+        "name": "Header",
+        "description": "PukiWiki Plus!のようなヘッダーを追加するプラグイン",
+        "version": "1.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/header.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/header.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_google_plugin": {
+        "name": "Google search",
+        "description": "Google検索プラグイン",
+        "version": "1.0.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/google.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/google.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_heading5_plugin": {
+        "name": "Heading5",
+        "description": "リクエストされてつくった見出し(h5)プラグイン",
+        "version": "1.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/heading5.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/heading5.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_html_cache_plugin": {
+        "name": "HTML Cache",
+        "description": "ページを一時的に保存して少しだけ処理を軽量化するプラグイン",
+        "version": "1.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/html_cache.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/html_cache.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_iplog_plugin": {
+        "name": "IPLog",
+        "description": "IPアドレスを記録するプラグイン",
+        "version": "1.0",
+        "author": "PitaQ",
+        "url": "https://pukiwiki.sourceforge.io/?自作プラグイン/iplog.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/iplog.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_mlcomment_plugin": {
+        "name": "Mluti-lineComment",
+        "description": "リクエストされてつくった複数行コメントプラグイン (Origin: comment)",
+        "version": "1.1",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/mlcomment.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/mlcomment.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_mlarticle_plugin": {
+        "name": "Mluti-lineComment's Article",
+        "description": "複数行コメント版掲示板プラグイン (Origin: article)",
+        "version": "1.1",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/mlarticle.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/mlcomment.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_mytools_plugin": {
+        "name": "MyTools",
+        "description": "PHPファイル(evalでの実行)をPukiWikiに埋め込むプラグイン",
+        "version": "1.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/mytools.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/mytools.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_nicovideo_player_plugin": {
+        "name": "NicoVideoPlayer",
+        "description": "ニコニコ動画の埋め込みプラグイン",
+        "version": "1.0.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/nicovideo_player.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/nicovideo_player.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_pluglist_plugin": {
+        "name": "PlugList",
+        "description": "プラグイン一覧を表示するプラグイン (Origin: versionlist)",
+        "version": "1.0.2",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/pluglist.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/PlugList"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_pukistatic_plugin": {
+        "name": "PukiStatic",
+        "description": "PukiWikiを静的化してHTMLを生成するプラグイン",
+        "version": "1.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/pukistatic.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/pukistatic.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_manageform_plugin": {
+        "name": "PukiWikiManageForm",
+        "description": "GUIで設定できるプラグイン",
+        "version": "1.2",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/manageform.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/manageform.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_region2_plugin": {
+        "name": "Region.v2",
+        "description": "折りたたみプラグイン(PKWKEXP_DISABLE_MULTILINE_PLUGIN_HACKを0にしてください) (Origin: region)",
+        "version": "1.3",
+        "author": "PitaQ, xxxxx",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/region2.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/region2.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_select_navi_plugin": {
+        "name": "SelectNavi",
+        "description": "ナビバー(タイトルの下のメニュー)にセレクトボックスを追加し、Configでカスタマイズできるプラグイン",
+        "version": "1.0.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/select_navi.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/select_navi.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_tex2_plugin": {
+        "name": "TeX2",
+        "description": "数式プラグイン",
+        "version": "1.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/tex2.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/tex2.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_timestamp_plugin": {
+        "name": "TimeStamp",
+        "description": "ページのタイムスタンプ書き換えプラグイン",
+        "version": "1.0.2",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/timestamp.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/timestamp.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_timestamp_backup_plugin": {
+        "name": "TimeStampBackup",
+        "description": "PukiWikiの引っ越し用タイムスタンプバックアッププラグイン",
+        "version": "1.0.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/timestamp_backup.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/timestamp_backup.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_viewedit_plugin": {
+        "name": "ViewEdit",
+        "description": "機能拡張編集プラグイン、リアルタイムプレビュープラグイン (Origin: edit)",
+        "version": "1.0.1",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/viewedit.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/viewedit.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_yahoojp_plugin": {
+        "name": "Yahoo! Japan search",
+        "description": "Yahoo! Japan (日本版) 検索プラグイン",
+        "version": "1.0.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/yahoojp.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/yahoojp.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_yahoo_plugin": {
+        "name": "Yahoo! search",
+        "description": "Yahoo! (海外版) 検索プラグイン",
+        "version": "1.0.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/yahoo.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/yahoo.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_youtube_plugin": {
+        "name": "YouTubeK",
+        "description": "YouTubeの動画埋め込みプラグイン",
+        "version": "1.0.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/youtube.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/youtube.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    },
+    "pukiwiki_youtube_sr_plugin": {
+        "name": "YouTube search",
+        "description": "YouTubeの検索ボックス設置プラグイン",
+        "version": "1.0.0",
+        "author": "PitaQ",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/youtube_sr.inc.php",
+        "license": "GPLv3",
+        "site": {
+            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/youtube_sr.inc.php"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin"
+        ]
+    }
+}

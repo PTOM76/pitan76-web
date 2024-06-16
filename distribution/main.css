@@ -1,0 +1,92 @@
+
+.item a {
+    color: #007bff;
+}
+
+.item a:hover {
+    color: #003b79;
+    text-decoration:none;
+}
+
+.cmt {
+    color: #005f00;
+}
+
+.var {
+    color: #379ac1;
+}
+
+.str {
+    color: #91082a;
+}
+
+.arr, .block {
+    color: #ffda06;
+}
+
+.item a,
+.item .str {
+
+    font-size: 25px;
+}
+
+.func {
+    color: #0019ba;
+}
+
+.func_name {
+    color: #007bff;
+}
+
+.indent {
+    margin-left: 20px;
+}
+
+/* テーブルのスタイル */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    border: 1px solid #6c6c6c;
+}
+
+/* テーブルのヘッダ */
+th {
+    background-color: #e1ffff;
+    border: 1px solid #d0d0d0;
+    padding: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+    text-align: center;
+}
+
+/* テーブルのセル */
+td {
+    border: 1px solid #d0d0d0;
+    padding: 2px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+th:first-child, td:first-child {
+    border-left: none;
+}
+
+tr:first-child th {
+    border-top: none;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+th:last-child, td:last-child {
+    border-right: none;
+}
+
+/* テーブルの行 */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}

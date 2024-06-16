@@ -1,0 +1,98 @@
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>PukiWikiプラグイン | Pitan76.NET</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HE7R17Z63N"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-HE7R17Z63N');
+    </script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../main.js"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-32x32.png"
+        sizes="32x32">
+    <link rel="icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-192x192.png"
+        sizes="192x192">
+    <link rel="apple-touch-icon"
+        href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-180x180.png">
+
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <!-- パンくずリスト -->
+    <span class="var">$topicpath</span> = <span class="arr">[</span><span class="str">"<a href="../">トップ</a>"</span>,
+    <span class="str">"<a href="./">配布ページ一覧</a>"</span>, 
+    <span class="str">"PukiWikiプラグイン"</span><span class="arr">]</span>;
+
+    <h1 class="cmt">/* PukiWikiプラグイン */</h1>
+
+    <span class="func">function</span> <span class="func_name">openPukiWikiプラグイン()</span> <span class="block">{</span><br />
+
+    <div class="indent">
+
+    <p class="cmt">// 今まで配布してきたPukiWiki自作プラグインをまとめています。</p>
+
+    <span class="var">$table</span> = <span class="str">&lt;&lt;&lt;EOD</span>
+    <div class="indent">
+            <table class="table" id="works_table">
+                <thead>
+                    <tr>
+                        <th>名称</th>
+                        <th>説明</th>
+                        <th>バージョン</th>
+                        <th>詳細ページ</th>
+                        <th>ダウンロード</th>
+                        <th>配布日</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                    </tr>
+                </tbody>            
+            </table>
+            <script>
+                $table_tag = document.getElementById('works_table');
+                let req = new XMLHttpRequest();
+                req.onreadystatechange = function() {
+                    if(req.readyState != 4 || req.status != 200) return;
+                    let res = JSON.parse(req.responseText);
+                    
+                    for (let i = 0; i < res.length; i++) {
+                        if (res[i].tag.includes('pukiwiki')) {
+                            let row = $table_tag.insertRow(-1);
+                            let cell1 = row.insertCell(0);
+                            let cell2 = row.insertCell(1);
+                            let cell3 = row.insertCell(2);
+                            let cell4 = row.insertCell(3);
+                            let cell5 = row.insertCell(4);
+                            let cell6 = row.insertCell(5);
+                            cell1.innerHTML = res[i].name;
+                            cell2.innerHTML = res[i].description;
+                            cell3.innerHTML = res[i].version;
+                            cell4.innerHTML = '<a href="' + res[i].site['pkom.pitan76.net'] + '">' + res[i].site['pkom.pitan76.net'] + '</a>';
+                            cell5.innerHTML = '<a href="' + res[i].url + '">' + res[i].url + '</a>';
+                            cell6.innerHTML = res[i].date;
+                        }
+                    }
+                }
+                req.open('GET', './works.json', true);
+                req.send();
+            </script>
+    </div>
+    
+        <span class="str">EOD;</span><br />
+        <br />
+        <span class="func_name">print(<span class="var">$table</span>)</span>;<br />
+
+    </div>
+    <span class="block">}</span>
+    </body>
+
+</html>
