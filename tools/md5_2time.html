@@ -1,4 +1,3 @@
-<!-- License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/deed.ja) -->
 <!DOCTYPE html>
 <html lang="ja">
     <head>
@@ -13,9 +12,10 @@
           gtag('js', new Date());
           gtag('config', 'G-HE7R17Z63N');
         </script>
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="../lib/js/jquery/jquery.min.js"></script>
+        <script src="../lib/md5.js"></script>
         <script src="../main.js"></script>
-        <script src="./js/regexp.js"></script> 
+        <script src="./js/sui.js"></script> 
         <meta name='viewport' content='width=device-width, initial-scale=1'>
         <link rel="icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-32x32.png" sizes="32x32">
         <link rel="icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-192x192.png" sizes="192x192">
@@ -36,27 +36,28 @@
         </div>
         <div class="title">
             <h2>Pitan76.NET</h2>
-            <span style="color:white;"><a href="../">トップ</a> > <a href="./">Webツール</a> > 正規表現チェッカー</span>
+            <span style="color:white;"><a href="../">トップ</a> > <a href="./">Webツール</a> > 二重MD5生成ツール</span>
         </div>
         <div class="main">
             <div class="contents">
-                <h3>正規表現チェッカー</h3>
+                <h3>二重MD5生成ツール</h3>
                 <div style="text-align: left; font-size: 15px;">
                     <p>
-                        JSで疑似的にPHPのpreg_matchを再現した正規表現チェッカーです。<br />
-                        あくまで疑似的に再現したものであり、挙動が異なる場合がございます。<br />
-                        デミリタは不要ですが、使用する場合は「/」を使用してください。<br />
-                        また、フラグは「g, i, m, s, u, y」のみ対応しています。<br />
-                        ぜひ、正規表現のチェックにお使いください。<br />
+                        このツールはハッシュ化して生成したハッシュを再度、ハッシュ化します。
                     </p>
-                    <textarea id="pattern" style="width:100%;height:22px; font-size: 15px;" placeholder="正規表現を入力してください。"></textarea>
+                    <textarea id="input" style="width: 100%;" rows="5"></textarea>
                     <br />
-                    <textarea id="subject" style="width:100%;height:110px; font-size: 15px;" placeholder="テキストを入力してください。"></textarea>
+                    <input type="button" id="generate" value="生成" />
                     <br />
-                    <button onclick="regexp_checkbtn()">チェック</button>
-                    <br />
-                    <div id="result" style="font-size: 15px;"></div>
-                    
+                    <input type="text" style="width: 100%;" id="output" disabled />
+
+                    <script>
+                        $btn = document.getElementById("generate");
+                        $btn.addEventListener('click', function() {
+                            $input = document.getElementById("input").value;
+                            $output = document.getElementById("output").value = CybozuLabs.MD5.calc(CybozuLabs.MD5.calc($input));
+                        });
+                    </script>
                 </div>
             </div>
         </div>

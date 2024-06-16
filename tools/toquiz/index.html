@@ -4,9 +4,9 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>匿名クイズ | Pitan76.NET</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        <link href="../../lib/css/bootstrap/bootstrap.min.css" rel="stylesheet"
             integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="../../lib/js/jquery/jquery.min.js"></script>
         <script src="../../lib/md5.js"></script>
     </head>
     <body>
@@ -26,7 +26,7 @@
                             <a class="nav-link active" aria-current="page" href="#">作成</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">一覧</a>
+                            <a class="nav-link" href="./list.html">一覧</a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
@@ -38,6 +38,8 @@
         </nav>
 
         <script>
+            var API_URL = "https://script.google.com/macros/s/AKfycbxBFZ_kl9FYP1BbLauSbAgPznEHzEIfFhIbTMpB-kJiScaAD03EERP5K6nq1zlrv670/exec";
+
             let $url = new URL(location.href);
             let $params = $url.searchParams;
 
@@ -52,17 +54,34 @@
                     //document.getElementById('main').style.display = 'none';
                     document.getElementById('success').style.display = 'block';
                     let $generated_url_tag = document.getElementById('generated_url');
+                    let $share_btn = document.getElementById('share_btn');
                     let $encoded_c = CybozuLabs.MD5.calc($c);
 
-                    $new_param_str = "?q=" + $q + "&t=" + $t + "&c=" + $encoded_c;
+                    let $new_param_str = "?q=" + $q + "&t=" + $t + "&c=" + $encoded_c;
                     if ($s.length > 0) {
                         $new_param_str += "&s[]=" + $s.join("&s[]=");
                     }
 
                     $new_param_str = encodeURI($new_param_str);
+                    let $url = "https://pitan76.net/tools/toquiz/play.html" + $new_param_str;
 
-                    $generated_url_tag.href = 
-                    $generated_url_tag.innerText = "https://pitan76.net/tools/onsys/quizhub/play.html" + $new_param_str;
+                    let $base64_param = btoa($new_param_str);
+                    
+                    $generated_url_tag.href = $url;
+                    $generated_url_tag.innerText = decodeURI($url);
+
+                    let $share_btn_url = $share_btn.href;
+                    $share_btn_url = $share_btn_url.replace("{url_string}", "https://pitan76.net/tools/toquiz/play.html" + encodeURIComponent($new_param_str));
+                    $share_btn_url = $share_btn_url.replace("{text_string}", "匿名クイズでクイズを作成しました！");
+                    $share_btn.href = $share_btn_url;
+
+                    var $xhr = new XMLHttpRequest();
+                    
+                    $xhr.open('GET', API_URL + '?param=' + $base64_param, true);
+                    $xhr.onload = function() {
+                        
+                    }
+                    $xhr.send();
                 });
             }
         </script>
@@ -77,20 +96,23 @@
 
             <div class="alert alert-success" role="alert" id="success" style="display: none;">
                 クイズを作成しました。以下のリンクを共有してください。<br />
-                <a id="generated_url" href="?q=問題&t=回答手段&s[]=選択肢&s[]=選択肢&s[]=選択肢&c=正解">https://pitan76.net/tools/onsys/quizhub/play.html?q=問題&t=回答手段&s[]=選択肢&s[]=選択肢&s[]=選択肢&c=正解</a>
+                <a id="generated_url" href="?q=問題&t=回答手段&s[]=選択肢&s[]=選択肢&s[]=選択肢&c=正解">https://pitan76.net/tools/toquiz/play.html?q=問題&t=回答手段&s[]=選択肢&s[]=選択肢&s[]=選択肢&c=正解</a>
+                <br />
+                <br />
+                <a id="share_btn" class="share_btn" target="_blank" href="https://twitter.com/share?url={url_string}&amp;text={text_string}"><img src="../../image/twitter.png" alt="share on twitter" width="40" height="40"></a>
             </div>
 
             <h1>匿名クイズ</h1>
             
             <div class="alert alert-primary" role="alert">
-                このツールは、クイズを作成・編集・公開するためのツールです。作成したクイズは、一覧に登録され、他のユーザーが利用できるようになります。
+                このツールは、クイズを作成するためのツールです。作成したクイズは、一覧に登録され、他のユーザーが利用できるようになります。
                 <br />
-                ※このツールは、まだ開発中です。機能が変更・追加・削除される可能性があります。
+                ※このツールは、まだ開発中です。削除機能は追加していないため、個人情報などは入力しないでください。また、機能が変更・追加・削除される可能性があります。
             </div>
             <form class="row g-3">
                 <div class="col-12">
                     <label for="quiz_questions" class="form-label">問題</label>
-                    <textarea class="form-control" name="q" id="quiz_questions"></textarea>
+                    <textarea class="form-control" name="q" id="quiz_questions" required></textarea>
                 </div>
 
                 <!-- 入力欄か選択肢を選ぶ -->
@@ -145,7 +167,7 @@
                         });
                     </script>
                     <br /><br />
-                    <label for="quiz_correct" class="form-label">正しい選択 (任意)</label>
+                    <label for="quiz_correct" class="form-label">正しい選択</label>
                     <select class="form-select" id="quiz_correct">
                         <option value="none">-</option>
                     </select>
@@ -165,7 +187,7 @@
                 </div>
 
                 <div class="col-12" id="quiz_text">
-                    <label for="quiz_correct2" class="form-label">正しい答え (任意)</label>
+                    <label for="quiz_correct2" class="form-label">正しい答え</label>
                     <textarea class="form-control" name="c" id="quiz_correct2"></textarea>
                 </div>
 
