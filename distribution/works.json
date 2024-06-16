@@ -8,7 +8,7 @@
         "license": "GPLv3",
         "createAt": "2021/07/06",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/accordion.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/accordion.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -23,7 +23,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/alert.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/alert.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/alert.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -38,7 +38,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/blink.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/blink.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/blink.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -53,7 +53,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/bcontents.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/bcontents.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/bcontents.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -68,7 +68,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/bgcolor.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/bgcolor.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/bgcolor.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -77,13 +77,13 @@
     },
     "pukiwiki_brecent_plugin": {
         "name": "BlogRecent",
-        "description": "ブログ風更新したページ一覧表示するプラグイン (Origin: recent)",
+        "description": "ブログ風更新したページ一覧表示するプラグイン<br />(Origin: recent)",
         "version": "1.1",
         "author": "PitaQ",
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/brecent.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/brecent.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/brecent.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -98,7 +98,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/bot.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/bot.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/bot.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -113,7 +113,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/button.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/button.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/button.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -128,7 +128,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/submit.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/button.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/button.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -143,7 +143,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/checkarea.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/checkarea.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/checkarea.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -152,13 +152,13 @@
     },
     "pukiwiki_commentplus_plugin": {
         "name": "CommentPlus",
-        "description": "コメントの機能拡張プラグイン (Origin: Comment)",
+        "description": "コメントの機能拡張プラグイン<br />(Origin: Comment)",
         "version": "1.0",
         "author": "PitaQ",
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/commentplus.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/commentplus.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/commentplus.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -167,13 +167,13 @@
     },
     "pukiwiki_ctrlcmt_plugin": {
         "name": "CtrlCmt",
-        "description": "管理画面で設定できる機能拡張版コメントプラグイン (Origin: comment)",
+        "description": "管理画面で設定できる機能拡張版コメントプラグイン<br />(Origin: comment)",
         "version": "1.02",
         "author": "PitaQ",
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/ctrlcmt.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/ctrlcmt.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/ctrlcmt.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -182,13 +182,13 @@
     },
     "pukiwiki_easyedit_plugin": {
         "name": "EasyEdit",
-        "description": "CKEditor版編集プラグイン (Origin: edit, guiedit)",
+        "description": "CKEditor版編集プラグイン<br />(Origin: edit, guiedit)",
         "version": "1.0.9",
         "author": "PitaQ",
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/easyedit.zip",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/easyedit.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/easyedit.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -197,13 +197,13 @@
     },
     "pukiwiki_exrules2_plugin": {
         "name": "exrules2",
-        "description": "ページ内でユーザ定義ルールを設定 (Origin: exrules)",
+        "description": "ページ内でユーザ定義ルールを設定<br />(Origin: exrules)",
         "version": "1.0.0",
         "author": "PitaQ",
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/exrules2.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/exrules2.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/exrules2.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -218,7 +218,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/footer.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/footer.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/footer.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -233,7 +233,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/header.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/header.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/header.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -248,7 +248,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/google.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/google.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/google.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -263,7 +263,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/heading5.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/heading5.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/heading5.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -278,7 +278,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/html_cache.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/html_cache.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/html_cache.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -293,7 +293,7 @@
         "url": "https://pukiwiki.sourceforge.io/?自作プラグイン/iplog.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/iplog.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/iplog.php"
         },
         "tag": [
             "pukiwiki",
@@ -302,13 +302,13 @@
     },
     "pukiwiki_mlcomment_plugin": {
         "name": "Mluti-lineComment",
-        "description": "リクエストされてつくった複数行コメントプラグイン (Origin: comment)",
+        "description": "リクエストされてつくった複数行コメントプラグイン<br />(Origin: comment)",
         "version": "1.1",
         "author": "PitaQ",
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/mlcomment.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/mlcomment.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/mlcomment.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -317,13 +317,13 @@
     },
     "pukiwiki_mlarticle_plugin": {
         "name": "Mluti-lineComment's Article",
-        "description": "複数行コメント版掲示板プラグイン (Origin: article)",
+        "description": "複数行コメント版掲示板プラグイン<br />(Origin: article)",
         "version": "1.1",
         "author": "PitaQ",
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/mlarticle.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/mlcomment.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/mlcomment.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -338,7 +338,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/mytools.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/mytools.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/mytools.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -353,7 +353,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/nicovideo_player.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/nicovideo_player.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/nicovideo_player.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -362,13 +362,13 @@
     },
     "pukiwiki_pluglist_plugin": {
         "name": "PlugList",
-        "description": "プラグイン一覧を表示するプラグイン (Origin: versionlist)",
+        "description": "プラグイン一覧を表示するプラグイン<br />(Origin: versionlist)",
         "version": "1.0.2",
         "author": "PitaQ",
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/pluglist.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/PlugList"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/PlugList"
         },
         "tag": [
             "pukiwiki",
@@ -383,7 +383,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/pukistatic.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/pukistatic.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/pukistatic.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -398,7 +398,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/manageform.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/manageform.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/manageform.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -407,13 +407,13 @@
     },
     "pukiwiki_region2_plugin": {
         "name": "Region.v2",
-        "description": "折りたたみプラグイン(PKWKEXP_DISABLE_MULTILINE_PLUGIN_HACKを0にしてください) (Origin: region)",
+        "description": "折りたたみプラグイン<br />(Origin: region)",
         "version": "1.3",
         "author": "PitaQ, xxxxx",
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/region2.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/region2.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/region2.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -422,13 +422,13 @@
     },
     "pukiwiki_select_navi_plugin": {
         "name": "SelectNavi",
-        "description": "ナビバー(タイトルの下のメニュー)にセレクトボックスを追加し、Configでカスタマイズできるプラグイン",
+        "description": "ナビバーにセレクトボックスを追加し、<br />Configでカスタマイズできるプラグイン",
         "version": "1.0.0",
         "author": "PitaQ",
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/select_navi.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/select_navi.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/select_navi.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -443,7 +443,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/tex2.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/tex2.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/tex2.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -458,7 +458,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/timestamp.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/timestamp.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/timestamp.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -473,7 +473,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/timestamp_backup.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/timestamp_backup.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/timestamp_backup.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -482,13 +482,13 @@
     },
     "pukiwiki_viewedit_plugin": {
         "name": "ViewEdit",
-        "description": "機能拡張編集プラグイン、リアルタイムプレビュープラグイン (Origin: edit)",
+        "description": "機能拡張リアルタイムプレビュー編集プラグイン<br />(Origin: edit)",
         "version": "1.0.1",
         "author": "PitaQ",
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/viewedit.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/viewedit.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/viewedit.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -503,7 +503,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/yahoojp.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/yahoojp.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/yahoojp.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -518,7 +518,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/yahoo.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/yahoo.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/yahoo.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -533,7 +533,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/youtube.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/youtube.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/youtube.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -548,7 +548,7 @@
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/youtube_sr.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom.pitan76.net": "https://pkom.pitan76.net/?プラグイン/youtube_sr.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/youtube_sr.inc.php"
         },
         "tag": [
             "pukiwiki",
