@@ -61,10 +61,12 @@
                 $table_tag = document.getElementById('works_table');
                 let req = new XMLHttpRequest();
                 req.onreadystatechange = function() {
-                    if(req.readyState != 4 || req.status != 200) return;
-                    let res = JSON.parse(req.responseText);
+                    if (req.readyState != 4 || req.status != 200) return;
                     
-                    for (let i = 0; i < res.length; i++) {
+                    let res = JSON.parse(req.responseText);
+                    let length = Object.keys(res).length;
+
+                    for (var i in res) {
                         if (res[i].tag.includes('pukiwiki')) {
                             let row = $table_tag.insertRow(-1);
                             let cell1 = row.insertCell(0);
@@ -76,8 +78,15 @@
                             cell1.innerHTML = res[i].name;
                             cell2.innerHTML = res[i].description;
                             cell3.innerHTML = res[i].version;
-                            cell4.innerHTML = '<a href="' + res[i].site['pkom.pitan76.net'] + '">' + res[i].site['pkom.pitan76.net'] + '</a>';
-                            cell5.innerHTML = '<a href="' + res[i].url + '">' + res[i].url + '</a>';
+                            
+                            let sites = "";
+                            for (var j in res[i].site) {
+                                sites += '<a href="' + res[i].site[j] + '">' + j + '</a><br>';
+                            }
+                            cell4.innerHTML = sites
+
+                            let filename = res[i].url.split('/').pop();
+                            cell5.innerHTML = '<a href="' + res[i].url + '">' + filename + '</a>';
                             cell6.innerHTML = res[i].date;
                         }
                     }
