@@ -11,6 +11,7 @@
     --arr : #ffda06;
     --func : #0019ba;
     --func_name : #007bff;
+    --rtn : #b60092;
 }
 
 :root[theme="dark"] {
@@ -27,6 +28,7 @@
     --arr: #fff176;
     --func: #6a74cc;
     --func_name: #82b1ff;
+    --rtn : #ff52dc;
 }
 
 html {
@@ -79,6 +81,10 @@ a {
 
 .func_name {
     color: var(--func_name);
+}
+
+.rtn {
+    color: var(--rtn);
 }
 
 .indent {
