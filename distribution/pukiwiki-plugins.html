@@ -101,14 +101,14 @@
                         cell6.classList.add('date');
                     }
                 }
+
+                var options = {
+                    valueNames: ['name', 'date']
+                };
+                var distributelist = new List('distributelist', options);
             }
             req.open('GET', './works.json', true);
             req.send();
-
-            var options = {
-                valueNames: ['name', 'date']
-            };
-            var distributelist = new List('distributelist', options);
         </script>
     </div>
     
