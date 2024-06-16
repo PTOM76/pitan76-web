@@ -3,7 +3,7 @@
         "name": "Accordion",
         "description": "見出し版折りたたみプラグイン",
         "version": "1.5",
-        "author": "PitaQ",
+        "author": "PitaQ, 七海",
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/accordion.inc.php",
         "license": "GPLv3",
         "createAt": "2021/07/06",
