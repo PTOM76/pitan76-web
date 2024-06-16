@@ -87,7 +87,11 @@
 
                             let filename = res[i].url.split('/').pop();
                             cell5.innerHTML = '<a href="' + res[i].url + '">' + filename + '</a>';
-                            cell6.innerHTML = res[i].date;
+                            if (res[i].createAt == null) {
+                                cell6.innerHTML = "-";
+                            } else {
+                                cell6.innerHTML = res[i].createAt;
+                            }
                         }
                     }
                 }
