@@ -1,27 +1,70 @@
+:root {
+    --main-text: #000000;
+    --main-bg: #ffffff;
+
+    --item_a: #007bff;
+    --item_a_hover: #003b79;
+
+    --cmt : #005f00;
+    --var : #379ac1;
+    --str : #91082a;
+    --arr : #ffda06;
+    --func : #0019ba;
+    --func_name : #007bff;
+}
+
+:root[theme="dark"] {
+    --main-text: #ffffff;
+    --main-bg: #000000;
+
+    --cmt : #52993E;
+    --item_a: #82b1ff;
+    --item_a_hover: #007bff;
+    
+    --cmt: #7ec699;
+    --var: #9cdaf2;
+    --str: #f27983;
+    --arr: #fff176;
+    --func: #6a74cc;
+    --func_name: #82b1ff;
+}
+
+html {
+    color: var(--main-text);
+    background-color: var(--main-bg);
+}
+
+body {
+    color: var(--main-text);
+}
+
+a {
+    color: var(--item_a);
+}
 
 .item a {
-    color: #007bff;
+    color: var(--item_a);
 }
 
 .item a:hover {
-    color: #003b79;
+    color: var(--item_a_hover);
     text-decoration:none;
 }
 
 .cmt {
-    color: #005f00;
+    color: var(--cmt);
 }
 
 .var {
-    color: #379ac1;
+    color: var(--var);
 }
 
 .str {
-    color: #91082a;
+    color: var(--str);
 }
 
 .arr, .block {
-    color: #ffda06;
+    color: var(--arr);
 }
 
 .item a,
@@ -31,11 +74,11 @@
 }
 
 .func {
-    color: #0019ba;
+    color: var(--func);
 }
 
 .func_name {
-    color: #007bff;
+    color: var(--func_name);
 }
 
 .indent {
