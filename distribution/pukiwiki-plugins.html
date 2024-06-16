@@ -14,6 +14,7 @@
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <script src="../main.js"></script>
+    <script src="../lib/js/list.min.js"></script>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-32x32.png"
         sizes="32x32">
@@ -41,15 +42,16 @@
 
     <span class="var">$table</span> = <span class="str">&lt;&lt;&lt;EOD</span>
     <div class="indent">
+        <div class="distributelist">
             <table class="table" id="works_table">
                 <thead>
                     <tr>
-                        <th>名称</th>
+                        <th class="sort" data-sort="name">名称</th>
                         <th>説明</th>
                         <th>バージョン</th>
                         <th>詳細ページ</th>
                         <th>ダウンロード</th>
-                        <th>配布日</th>
+                        <th class="sort" data-sort="date">配布日</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -57,47 +59,57 @@
                     </tr>
                 </tbody>            
             </table>
-            <script>
-                $table_tag = document.getElementById('works_table');
-                let req = new XMLHttpRequest();
-                req.onreadystatechange = function() {
-                    if (req.readyState != 4 || req.status != 200) return;
-                    
-                    let res = JSON.parse(req.responseText);
-                    let length = Object.keys(res).length;
+        </div>
+        <script>
+            $table_tag = document.getElementById('works_table');
+            let req = new XMLHttpRequest();
+            req.onreadystatechange = function () {
+                if (req.readyState != 4 || req.status != 200) return;
 
-                    for (var i in res) {
-                        if (res[i].tag.includes('pukiwiki')) {
-                            let row = $table_tag.insertRow(-1);
-                            let cell1 = row.insertCell(0);
-                            let cell2 = row.insertCell(1);
-                            let cell3 = row.insertCell(2);
-                            let cell4 = row.insertCell(3);
-                            let cell5 = row.insertCell(4);
-                            let cell6 = row.insertCell(5);
-                            cell1.innerHTML = res[i].name;
-                            cell2.innerHTML = res[i].description;
-                            cell3.innerHTML = res[i].version;
-                            
-                            let sites = "";
-                            for (var j in res[i].site) {
-                                sites += '<a href="' + res[i].site[j] + '">' + j + '</a><br>';
-                            }
-                            cell4.innerHTML = sites
+                let res = JSON.parse(req.responseText);
+                let length = Object.keys(res).length;
 
-                            let filename = res[i].url.split('/').pop();
-                            cell5.innerHTML = '<a href="' + res[i].url + '">' + filename + '</a>';
-                            if (res[i].createAt == null) {
-                                cell6.innerHTML = "-";
-                            } else {
-                                cell6.innerHTML = res[i].createAt;
-                            }
+                for (var i in res) {
+                    if (res[i].tag.includes('pukiwiki')) {
+                        let row = $table_tag.insertRow(-1);
+                        let cell1 = row.insertCell(0);
+                        let cell2 = row.insertCell(1);
+                        let cell3 = row.insertCell(2);
+                        let cell4 = row.insertCell(3);
+                        let cell5 = row.insertCell(4);
+                        let cell6 = row.insertCell(5);
+                        cell1.innerHTML = res[i].name;
+                        cell2.innerHTML = res[i].description;
+                        cell3.innerHTML = res[i].version;
+
+                        let sites = "";
+                        for (var j in res[i].site) {
+                            sites += '<a href="' + res[i].site[j] + '">' + j + '</a><br>';
                         }
+                        cell4.innerHTML = sites
+
+                        let filename = res[i].url.split('/').pop();
+                        cell5.innerHTML = '<a href="' + res[i].url + '">' + filename + '</a>';
+                        if (res[i].createAt == null) {
+                            cell6.innerHTML = "-";
+                        } else {
+                            cell6.innerHTML = res[i].createAt;
+                        }
+
+                        // クラスを追加
+                        cell1.classList.add('name');
+                        cell6.classList.add('date');
                     }
                 }
-                req.open('GET', './works.json', true);
-                req.send();
-            </script>
+            }
+            req.open('GET', './works.json', true);
+            req.send();
+
+            var options = {
+                valueNames: ['name', 'date']
+            };
+            var distributelist = new List('distributelist', options);
+        </script>
     </div>
     
         <span class="str">EOD;</span><br />
