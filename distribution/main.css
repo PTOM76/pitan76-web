@@ -12,6 +12,12 @@
     --func : #0019ba;
     --func_name : #007bff;
     --rtn : #b60092;
+
+    --outer_frame : #6c6c6c;
+    --inner_frame: #d0d0d0;
+    --th_bg : #e1ffff;
+    --tr_even : #f2f2f2;
+    --tr_odd : #ffffff;
 }
 
 :root[theme="dark"] {
@@ -29,6 +35,12 @@
     --func: #6a74cc;
     --func_name: #82b1ff;
     --rtn : #ff52dc;
+
+    --outer_frame : #acacac;
+    --inner_frame: #8d8d8d;
+    --th_bg : #2f8686;
+    --tr_even : #131313;
+    --tr_odd : #000000;
 }
 
 html {
@@ -93,18 +105,18 @@ a {
 
 /* テーブルのスタイル */
 table {
-    color : #000000;
+    color : var(--main-text);
     border-collapse: collapse;
     min-width: 50%;
     max-width: 99%;
-    border: 1px solid #6c6c6c;
+    border: 1px solid var(--outer_frame);
 }
 
 /* テーブルのヘッダ */
 th {
-    color : #000000;
-    background-color: #e1ffff;
-    border: 1px solid #d0d0d0;
+    color : var(--main-text);
+    background-color: var(--th_bg);
+    border: 1px solid var(--inner_frame);
     padding: 2px;
     padding-left: 8px;
     padding-right: 8px;
@@ -113,8 +125,8 @@ th {
 
 /* テーブルのセル */
 td {
-    color : #000000;
-    border: 1px solid #d0d0d0;
+    color : var(--main-text);
+    border: 1px solid var(--inner_frame);
     padding: 2px;
     padding-left: 8px;
     padding-right: 8px;
@@ -138,8 +150,8 @@ th:last-child, td:last-child {
 
 /* テーブルの行 */
 tr:nth-child(even) {
-    background-color: #f2f2f2;
+    background-color: var(--tr_even);
 }
 tr:nth-child(odd) {
-    background-color: #ffffff;
+    background-color: var(--tr_odd);
 }
