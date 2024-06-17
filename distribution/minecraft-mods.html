@@ -100,6 +100,12 @@
                             loaders.push('LiteLoader');
                         if (res[i].tag.includes('rift'))
                             loaders.push('Rift');
+                        if (res[i].tag.includes('bukkit'))
+                            loaders.push('Bukkit');
+                        if (res[i].tag.includes('spigot'))
+                            loaders.push('Spigot');
+                        if (res[i].tag.includes('paper'))
+                            loaders.push('Paper');
                         
                         if (loaders.length == 0) {
                             loaders = "-";

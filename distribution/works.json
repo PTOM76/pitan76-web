@@ -652,6 +652,43 @@
             "fabric"
         ]
     },
+    "mcmod_enhancedquarries": {
+        "name": "Enhanced Quarries",
+        "description": "クァーリー、フィラーなどを追加するMOD",
+        "version": "1.4.5",
+        "mcversion": "1.16.5-1.20.4",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/enhancedquarries/files/all?page=1&pageSize=20",
+        "license": "MPL-2.0",
+        "site": {
+            "wiki": "https://wikichree.com/pitan76/?Enhanced+Quarries",
+            "github": "https://github.com/PTOM76/EnhancedQuarries",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/enhancedquarries"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric"
+        ]
+    },
+    "mcplugin_clearvehicle": {
+        "name": "ClearVehicle",
+        "description": "乗り物（トロッコ、ボート）の数をConfigで制限するSpigotプラグイン<br />※1.12.2以外のバージョンでの動作確認はしていません",
+        "version": "1.0.2",
+        "mcversion": "1.12.2",
+        "author": "PitaQ",
+        "url": "https://dev.bukkit.org/projects/clearvehicle/files",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/ClearVehicle",
+            "bukkit.org": "https://dev.bukkit.org/projects/clearvehicle"
+        },
+        "tag": [
+            "minecraft",
+            "plugin",
+            "spigot"
+        ]
+    },
     "mmdplugin_install_manager": {
         "name": "MMD Plugin Install Manager (PitaQフォーク版)",
         "description": "MMD Plugin Install Managerを現時点で最新のv9.32対応に対応させたフォーク版",
@@ -700,12 +737,12 @@
     "mmdplugin_mmdplugindll": {
         "name": "MMDPluginDLL (PitaQフォーク版)",
         "description": "Soul-chan氏のMMDPluginDLLを最新のv9.32に対応させたフォーク版<br />前提プラグイン: MMDPlugin",
-        "version": "1.0.0",
+        "version": "1.0.0.1",
         "author": "PitaQ, Soul-chan (original)",
-        "url": "https://github.com/PTOM76/MMDPluginDLL",
+        "url": "https://github.com/PTOM76/MMDPluginDLL/releases/download/1.0.0.1/MMDPluginDLL.zip",
         "license": "MIT",
         "site": {
-            "github": "https://github.com/PTOM76/MMDPluginDLL/releases/download/1.0.0.1/MMDPluginDLL.zip"
+            "github": "https://github.com/PTOM76/MMDPluginDLL"
         },
         "tag": [
             "mmd",
@@ -730,7 +767,7 @@
     },
     "git_account_manager": {
         "name": "Git Account Manager",
-        "description": "Gitアカウントを複数管理するための支援ツール",
+        "description": "Gitアカウントを複数管理するための支援ツール<br />Windowsのみ対応",
         "version": "v1.0.0",
         "author": "PitaQ",
         "url": "https://github.com/PTOM76/Git-Account-Manager/releases/download/v1.0.0/Git_Account_Manager_v1.0.0.zip",
@@ -740,6 +777,90 @@
         },
         "tag": [
             "tool"
+        ]
+    },
+    "discord_turnstile_verify_bot": {
+        "name": "Turnstile Verify",
+        "description": "TurnstileでDiscordのユーザー認証を行うためのDiscord用Bot<br />PHPのソースコードのみなので各自で環境を用意してください",
+        "version": "v1.0.0",
+        "author": "PitaQ",
+        "url": "https://github.com/PTOM76/discord-turnstile-verify-bot",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/discord-turnstile-verify-bot"
+        },
+        "tag": [
+            "discord",
+            "bot"
+        ]
+    },
+    "paper_mc_downloader": {
+        "name": "PaperMC Downloader",
+        "description": "PaperMCのビルドをダウンロードするための支援ツール<br />Java 8以上が必要",
+        "version": "v0.2",
+        "author": "PitaQ",
+        "url": "https://github.com/PTOM76/PaperMCDownloader/releases/download/v0.2/PaperMCDownloader-0.2.jar",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/PaperMCDownloader"
+        },
+        "tag": [
+            "tool"
+        ]
+    },
+    "md2pkwk": {
+        "name": "MD2PKWK",
+        "description": "MarkdownをPukiWiki記法に変換するツール<br />CLIで実行するPHPスクリプトのため、PHPをインストールしてご利用ください",
+        "author": "PitaQ",
+        "url": "https://github.com/PTOM76/MD2PKWK/releases/download/1/MD2PKWK.zip",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/MD2PKWK"
+        },
+        "tag": [
+            "tool"
+        ]
+    },
+    "png-to-8bit-png-converter": {
+        "name": "PNG to 8bit PNG Converter",
+        "description": "PNG画像を8bit PNG画像に変換するツール<br />サーバーはLinux推奨です。",
+        "author": "PitaQ",
+        "url": "https://github.com/PTOM76/png-to-8bit-png-converter-php",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/png-to-8bit-png-converter-php"
+        },
+        "tag": [
+            "tool"
+        ]
+    },
+    "my-tools-tool": {
+        "name": "Pkwk mytools plugin's tools",
+        "description": "PukiWikiのmytoolsプラグインで動くツールの詰め合わせ",
+        "author": "PitaQ",
+        "url": "https://github.com/PTOM76/my-tools-tool",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/my-tools-tool"
+        },
+        "tag": [
+            "tool"
+        ]
+    },
+    "mcsemegui": {
+        "name": "McSEmeGUI",
+        "description": "Minecraft Spigot ServerのコンソールをGUIで操作するSpigotプラグイン<br /><strike>正直昔作ったものなので使い物にならないゴミ</strike>",
+        "version": "v1.0.0",
+        "author": "PitaQ",
+        "url": "https://github.com/PTOM76/McSEmeGUI/releases/download/1.0.3/McSEmeGUI-1.0.3.jar",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/McSEmeGUI"
+        },
+        "tag": [
+            "minecraft",
+            "plugin",
+            "spigot"
         ]
     }
 }
