@@ -1,0 +1,173 @@
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../style.css" />
+    <title>マイクラMOD | Pitan76.NET</title>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HE7R17Z63N"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-HE7R17Z63N');
+    </script>
+    <!-- Google AdSense -->
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3977024448605477" crossorigin="anonymous"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="../main.js"></script>
+    <script src="../lib/js/darkmode.js"></script>
+    <script src="../lib/js/list.min.js"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-32x32.png"
+        sizes="32x32">
+    <link rel="icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-192x192.png"
+        sizes="192x192">
+    <link rel="apple-touch-icon"
+        href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-180x180.png">
+
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+    <!-- パンくずリスト -->
+    <span class="rtn">String[]</span> <span class="var">$topicpath</span> = <span class="arr">{</span><span class="str">"<a href="../">トップ</a>"</span>,
+    <span class="str">"<a href="./">配布ページ一覧</a>"</span>, 
+    <span class="str">"マイクラMOD"</span><span class="arr">}</span>;
+
+    <h1 class="cmt">/* マイクラMOD */</h1>
+
+    <span class="func">public static</span> <span class="rtn">String</span> <span class="func_name">openマイクラMOD()</span> <span class="block">{</span><br />
+
+    <div class="indent">
+
+    <p class="cmt">// 今まで配布してきたMinecraft用のMODをまとめています。</p>
+
+    <span class="rtn">String</span> <span class="var">$table</span> = <span class="str">"</span>
+    <div class="indent">
+        <div id="distributelist">
+            <table class="table" id="works_table">
+                <thead>
+                    <tr>
+                        <th class="sort" data-sort="name">名称</th>
+                        <th>説明</th>
+                        <th>MODバージョン</th>
+                        <th>MCバージョン</th>
+                        <th>MODローダー</th>
+                        <th>詳細ページ</th>
+                        <th>配布先</th>
+                        <th class="sort" data-sort="date">配布日</th>
+                    </tr>
+                </thead>
+                <tbody class="list">
+                </tbody>            
+            </table>
+        </div>
+        <script>
+            $table_tag = document.getElementById('works_table');
+            let req = new XMLHttpRequest();
+            req.onreadystatechange = function () {
+                if (req.readyState != 4 || req.status != 200) return;
+
+                let res = JSON.parse(req.responseText);
+                let length = Object.keys(res).length;
+
+                for (var i in res) {
+                    if (res[i].tag.includes('minecraft')) {
+                        let row = $table_tag.tBodies[0].insertRow(-1);
+                        let cell1 = row.insertCell(0);
+                        let cell2 = row.insertCell(1);
+                        let cell3 = row.insertCell(2);
+                        let cell4 = row.insertCell(3);
+                        let cell5 = row.insertCell(4);
+                        let cell6 = row.insertCell(5);
+                        let cell7 = row.insertCell(6);
+                        let cell8 = row.insertCell(7);
+                        cell1.innerHTML = res[i].name;
+                        cell2.innerHTML = res[i].description;
+                        cell3.innerHTML = res[i].version;
+                        cell4.innerHTML = res[i].mcversion;
+
+                        let loaders = [];
+                        if (res[i].tag.includes('forge')) 
+                            loaders.push('Forge');
+                        if (res[i].tag.includes('fabric'))
+                            loaders.push('Fabric');
+                        if (res[i].tag.includes('neoforge'))
+                            loaders.push('NeoForge');
+                        if (res[i].tag.includes('liteloader'))
+                            loaders.push('LiteLoader');
+                        if (res[i].tag.includes('rift'))
+                            loaders.push('Rift');
+                        
+                        if (loaders.length == 0) {
+                            loaders = "-";
+                        } else {
+                            loaders = loaders.join(', ');
+                        }
+
+                        cell5.innerHTML = loaders;
+
+                        let sites = "";
+                        for (var j in res[i].site) {
+                            sites += '<a href="' + res[i].site[j] + '">' + j + '</a><br>';
+                        }
+                        cell6.innerHTML = sites
+
+                        let filename = res[i].url.split('/').pop();
+                        cell7.innerHTML = '<a href="' + res[i].url + '">' + filename + '</a>';
+                        if (res[i].createAt == null) {
+                            cell8.innerHTML = "-";
+                        } else {
+                            cell8.innerHTML = res[i].createAt;
+                        }
+
+                        // クラスを追加
+                        cell1.classList.add('name');
+                        cell4.classList.add('mcver');
+                        cell8.classList.add('date');
+                    }
+                }
+
+                var options = {
+                    valueNames: ['name', 'mcver', 'date']
+                };
+                var distributelist = new List('distributelist', options);
+            }
+            req.open('GET', './works.json', true);
+            req.send();
+        </script>
+    </div>
+    
+        <span class="str">";</span><br />
+        <br />
+        <span class="func_name">System.out.println(<span class="var">$table</span>)</span>;<br />
+        <br />
+        <span class="rtn">return</span> <span class="str">"マイクラMOD"</span>;<br />
+
+    </div>
+    <span class="block">}</span>
+
+    <br /><br /><br /><br />
+    <span class="cmt">// --------------------------------</span><br />
+    <br />
+    <span class="cmt">// ダークモード切り替え</span><br />
+    <a class="func_name" href="javascript:toggleDarkMode()" id="dark-mode-toggle">toggleDarkMode()</a>;<br />
+    <br />
+    <p class="cmt">
+        /** <br />
+        * Pitan76.NET <br />
+        * - 利用規約 <a href="../terms.html">terms.html</a> <br />
+        * - 更新履歴 <a href="../changelog.html">changelog.html</a> <br />
+        * - 連絡 <a href="../contact.html">contact.html</a> <br />
+        * <br />
+        * @copyright 2023-2024 Pitan <br />
+        * @email admin@pitan76.net <br />
+         */ <br />
+
+    </p><br />
+
+    </body>
+
+</html>

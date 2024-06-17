@@ -554,5 +554,103 @@
             "pukiwiki",
             "plugin"
         ]
+    },
+
+    "mcmod_storagebox_for_fabric": {
+        "name": "StorageBox for Fabric",
+        "description": "Fabric用のStorageBox",
+        "version": "1.4.0",
+        "mcversion": "1.15.2-1.20.5",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/storagebox-fabric",
+        "license": "MIT",
+        "site": {
+            "wiki": "https://wikichree.com/pitan76/?Storage+Box+for+Fabric",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/storagebox-fabric"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric"
+        ]
+    },
+    "mcmod_simple_uncraftingtable": {
+        "name": "Simple Uncrafting Table",
+        "description": "アイテムを分解するための簡単な分解テーブル",
+        "version": "1.3.4",
+        "mcversion": "1.16.5-1.20.4",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/simple-uncrafting-table-fabric",
+        "license": "MIT",
+        "site": {
+            "wiki": "https://wikichree.com/pitan76/?Simple+Uncrafting+Table",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/simple-uncrafting-table-fabric"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "forge",
+            "neoforge",
+            "fabric"
+        ]
+    },
+    "mcmod_mcpitanlib": {
+        "name": "MCPitanLib",
+        "description": "自分用MOD開発ライブラリ",
+        "version": "2.2.4",
+        "mcversion": "1.16.5-1.20.4",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/mcpitanlibarch",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/Pitan76/MCPitanLib",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/mcpitanlibarch"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "forge",
+            "neoforge",
+            "fabric",
+            "library"
+        ]
+    },
+    "mcmod_advancedreborn": {
+        "name": "AdvancedReborn",
+        "description": "TechRebornに便利なアイテム、マシンなどを追加するアドオンMOD",
+        "version": "1.2.8-fix",
+        "mcversion": "1.16.5-1.20.4",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/advancedreborn",
+        "license": "MIT",
+        "site": {
+            "wiki": "https://wikichree.com/pitan76/?AdvancedReborn",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/advancedreborn"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric",
+            "techreborn"
+        ]
+    },
+    "mcmod_spacecube": {
+        "name": "Space Cube",
+        "description": "Compact Machinesのようなポケットディメンションを追加するMOD",
+        "version": "0.9.6",
+        "mcversion": "1.18.2-1.20.4",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/spacecube",
+        "license": "MIT",
+        "site": {
+            "wiki": "https://wikichree.com/pitan76/?Space+Cube",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/spacecube"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric"
+        ]
     }
+
 }
