@@ -651,6 +651,95 @@
             "mod",
             "fabric"
         ]
+    },
+    "mmdplugin_install_manager": {
+        "name": "MMD Plugin Install Manager (PitaQフォーク版)",
+        "description": "MMD Plugin Install Managerを現時点で最新のv9.32対応に対応させたフォーク版",
+        "version": "v0.03",
+        "author": "PitaQ, oigami (original)",
+        "url": "https://github.com/PTOM76/MMDPluginInstallManager/releases/download/v0.03/MMDPluginInstaller.zip",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/MMDPluginInstallManager"
+        },
+        "tag": [
+            "mmd",
+            "tool"
+        ]
+    },
+    "mmdplugin_discordrpc": {
+        "name": "MMDDiscordRPC",
+        "description": "DiscordにMMDのRPCを表示するプラグイン<br />前提プラグイン: MMDPlugin",
+        "version": "1.0.0",
+        "author": "PitaQ",
+        "url": "https://github.com/PTOM76/MMDDiscordRPC/releases/download/1.0/MMDDiscordRPC.zip",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/MMDDiscordRPC"
+        },
+        "tag": [
+            "mmd",
+            "plugin"
+        ]
+    },
+    "mmdplugin_mmdutility": {
+        "name": "MMDUtility (PitaQフォーク版)",
+        "description": "oigami氏の便利プラグインであるMMDUtilityを最新のv9.32に対応させたフォーク版<br />前提プラグイン: MMDPlugin",
+        "version": "v0.12.1",
+        "author": "PitaQ, oigami (original)",
+        "url": "https://github.com/PTOM76/MMDUtility/releases/download/v0.12.1/MMDUtility_v0.12.1_x64.zip",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/MMDUtility"
+        },
+        "tag": [
+            "mmd",
+            "plugin"
+        ]
+    },
+    "mmdplugin_mmdplugindll": {
+        "name": "MMDPluginDLL (PitaQフォーク版)",
+        "description": "Soul-chan氏のMMDPluginDLLを最新のv9.32に対応させたフォーク版<br />前提プラグイン: MMDPlugin",
+        "version": "1.0.0",
+        "author": "PitaQ, Soul-chan (original)",
+        "url": "https://github.com/PTOM76/MMDPluginDLL",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/MMDPluginDLL/releases/download/1.0.0.1/MMDPluginDLL.zip"
+        },
+        "tag": [
+            "mmd",
+            "plugin"
+        ]
+    },
+    "mmdplugin_exampleplugin": {
+        "name": "ExamplePlugin",
+        "description": "MMDPlugin用のプラグイン開発用テンプレート",
+        "version": "1.0.0",
+        "author": "PitaQ",
+        "url": "https://github.com/PTOM76/mmdplugin-ExamplePlugin",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/mmdplugin-ExamplePlugin"
+        },
+        "tag": [
+            "mmd",
+            "plugin",
+            "template"
+        ]
+    },
+    "git_account_manager": {
+        "name": "Git Account Manager",
+        "description": "Gitアカウントを複数管理するための支援ツール",
+        "version": "v1.0.0",
+        "author": "PitaQ",
+        "url": "https://github.com/PTOM76/Git-Account-Manager/releases/download/v1.0.0/Git_Account_Manager_v1.0.0.zip",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/Git-Account-Manager"
+        },
+        "tag": [
+            "tool"
+        ]
     }
-
 }

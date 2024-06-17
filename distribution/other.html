@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="stylesheet" href="../style.css" />
-    <title>PukiWikiプラグイン | Pitan76.NET</title>
+    <title>雑具箱 | Pitan76.NET</title>
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HE7R17Z63N"></script>
     <script>
@@ -34,17 +34,17 @@
     <!-- パンくずリスト -->
     <span class="var">$topicpath</span> = <span class="arr">[</span><span class="str">"<a href="../">トップ</a>"</span>,
     <span class="str">"<a href="./">配布ページ一覧</a>"</span>, 
-    <span class="str">"PukiWikiプラグイン"</span><span class="arr">]</span>;
+    <span class="str">"雑具箱"</span><span class="arr">]</span>;
 
-    <h1 class="cmt">/* PukiWikiプラグイン */</h1>
+    <h1 class="cmt">/* 雑具箱 */</h1>
 
-    <span class="func">function</span> <span class="func_name">openPukiWikiプラグイン(): <span class="rtn">string</span> <span class="block">{</span><br />
+    <span class="func">def</span> <span class="func_name">open雑具箱()</span><br />
 
     <div class="indent">
 
-    <p class="cmt">// 今まで配布してきたPukiWiki自作プラグインをまとめています。</p>
+    <p class="cmt"># 適当につくった分類していない小物/ゲーム/ツールなどをまとめています。</p>
 
-    <span class="var">$table</span> = <span class="str">&lt;&lt;&lt;EOD</span>
+    <span class="var">table</span> = <span class="str">&lt;&lt;-EOD</span>
     <div class="indent">
         <div id="distributelist">
             <table class="table" id="works_table">
@@ -59,7 +59,7 @@
                     </tr>
                 </thead>
                 <tbody class="list">
-                </tbody>
+                </tbody>            
             </table>
         </div>
         <script>
@@ -72,7 +72,10 @@
                 let length = Object.keys(res).length;
 
                 for (var i in res) {
-                    if (res[i].tag.includes('pukiwiki')) {
+                    //if (res[i].tag.includes('pukiwiki')) {
+                    if (!res[i].tag.includes('pukiwiki') &&
+                    !res[i].tag.includes('mmd') &&
+                    !res[i].tag.includes('minecraft')) {
                         let row = $table_tag.tBodies[0].insertRow(-1);
                         let cell1 = row.insertCell(0);
                         let cell2 = row.insertCell(1);
@@ -114,23 +117,23 @@
         </script>
     </div>
     
-        <span class="str">EOD;</span><br />
+        <span class="str">EOD</span><br />
         <br />
-        <span class="func_name">print(<span class="var">$table</span>)</span>;<br />
+        <span class="func_name">puts <span class="var">table</span></span><br />
         <br />
-        <span class="rtn">return</span> <span class="str">"PukiWikiプラグイン"</span>;<br />
+        <span class="rtn">return</span> <span class="str">"雑具箱"</span><br />
 
     </div>
-    <span class="block">}</span>
+    <span class="block">end</span>
 
     <br /><br /><br /><br />
-    <span class="cmt">// --------------------------------</span><br />
+    <span class="cmt"># --------------------------------</span><br />
     <br />
-    <span class="cmt">// ダークモード切り替え</span><br />
-    <a class="func_name" href="javascript:toggleDarkMode()" id="dark-mode-toggle">toggleDarkMode()</a>;<br />
+    <span class="cmt"># ダークモード切り替え</span><br />
+    <a class="func_name" href="javascript:toggleDarkMode()" id="dark-mode-toggle">toggleDarkMode()</a><br />
     <br />
     <p class="cmt">
-        /** <br />
+        #begin <br />
         * Pitan76.NET <br />
         * - 利用規約 <a href="../terms.html">terms.html</a> <br />
         * - 更新履歴 <a href="../changelog.html">changelog.html</a> <br />
@@ -138,7 +141,7 @@
         * <br />
         * @copyright 2023-2024 Pitan <br />
         * @email admin@pitan76.net <br />
-         */ <br />
+        #end <br />
 
     </p><br />
 
