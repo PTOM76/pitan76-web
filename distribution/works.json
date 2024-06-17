@@ -558,11 +558,11 @@
 
     "mcmod_storagebox_for_fabric": {
         "name": "StorageBox for Fabric",
-        "description": "Fabric用のStorageBox",
+        "description": "Fabric用のStorageBox<br />前提MOD: Fabric API",
         "version": "1.4.0",
         "mcversion": "1.15.2-1.20.5",
         "author": "PitaQ",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/storagebox-fabric<br />前提MOD: Fabric API",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/storagebox-fabric",
         "license": "MIT",
         "site": {
             "wiki": "https://wikichree.com/pitan76/?Storage+Box+for+Fabric",
@@ -596,11 +596,11 @@
     },
     "mcmod_mcpitanlib": {
         "name": "MCPitanLib",
-        "description": "自分用MOD開発ライブラリ",
+        "description": "自分用MOD開発ライブラリ<br />前提MOD: Archtectury API, Fabric API (Fabricのみ)",
         "version": "2.2.4",
         "mcversion": "1.16.5-1.20.4",
         "author": "PitaQ",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/mcpitanlibarch<br />前提MOD: Archtectury API, Fabric API (Fabricのみ)",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/mcpitanlibarch",
         "license": "MIT",
         "site": {
             "github": "https://github.com/Pitan76/MCPitanLib",
@@ -658,7 +658,7 @@
         "version": "1.4.5",
         "mcversion": "1.16.5-1.20.4",
         "author": "PitaQ",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/enhancedquarries/files/all?page=1&pageSize=20",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/enhancedquarries",
         "license": "MPL-2.0",
         "site": {
             "wiki": "https://wikichree.com/pitan76/?Enhanced+Quarries",
@@ -677,7 +677,7 @@
         "version": "0.8.7",
         "mcversion": "1.17-1.20.4",
         "author": "PitaQ, mymai1208, OffsetMonkey538",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/item-alchemy-fabric/files/all?page=1&pageSize=20",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/item-alchemy-fabric",
         "license": "MIT",
         "site": {
             "wiki": "https://wikichree.com/pitan76/?Item+Alchemy",
@@ -696,7 +696,7 @@
         "version": "0.0.10",
         "mcversion": "1.17-1",
         "author": "PitaQ",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/yamato-gun/files/all?page=1&pageSize=20",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/yamato-gun",
         "license": "MIT",
         "site": {
             "github": "https://github.com/Pitan76/YamatoGunMod",
@@ -715,7 +715,7 @@
         "version": "1.1.4-fix.1",
         "mcversion": "1.16.4-1.20.1",
         "author": "PitaQ",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/pipeplus/files/all?page=1&pageSize=20",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/pipeplus",
         "license": "MIT",
         "site": {
             "github": "https://github.com/PTOM76/PipePlus",
@@ -734,7 +734,7 @@
         "version": "1.0.2",
         "mcversion": "1.16.4-1.20.4",
         "author": "PitaQ",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/mod-sound-volume-options/files/all?page=1&pageSize=20",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/mod-sound-volume-options",
         "license": "MIT",
         "site": {
             "github": "https://github.com/PTOM76/mod-volume-options",
