@@ -562,7 +562,7 @@
         "version": "1.4.0",
         "mcversion": "1.15.2-1.20.5",
         "author": "PitaQ",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/storagebox-fabric",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/storagebox-fabric<br />前提MOD: Fabric API",
         "license": "MIT",
         "site": {
             "wiki": "https://wikichree.com/pitan76/?Storage+Box+for+Fabric",
@@ -576,7 +576,7 @@
     },
     "mcmod_simple_uncraftingtable": {
         "name": "Simple Uncrafting Table",
-        "description": "アイテムを分解するための簡単な分解テーブル",
+        "description": "アイテムを分解するための簡単な分解テーブル<br />前提MOD: MCPitanLib",
         "version": "1.3.4",
         "mcversion": "1.16.5-1.20.4",
         "author": "PitaQ",
@@ -600,7 +600,7 @@
         "version": "2.2.4",
         "mcversion": "1.16.5-1.20.4",
         "author": "PitaQ",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/mcpitanlibarch",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/mcpitanlibarch<br />前提MOD: Archtectury API, Fabric API (Fabricのみ)",
         "license": "MIT",
         "site": {
             "github": "https://github.com/Pitan76/MCPitanLib",
@@ -617,7 +617,7 @@
     },
     "mcmod_advancedreborn": {
         "name": "AdvancedReborn",
-        "description": "TechRebornに便利なアイテム、マシンなどを追加するアドオンMOD",
+        "description": "TechRebornに便利なアイテム、マシンなどを追加するアドオンMOD<br />前提MOD: MCPitanLib, TechReborn",
         "version": "1.2.8-fix",
         "mcversion": "1.16.5-1.20.4",
         "author": "PitaQ",
@@ -636,7 +636,7 @@
     },
     "mcmod_spacecube": {
         "name": "Space Cube",
-        "description": "Compact Machinesのようなポケットディメンションを追加するMOD",
+        "description": "Compact Machinesのようなポケットディメンションを追加するMOD<br />前提MOD: MCPitanLib",
         "version": "0.9.6",
         "mcversion": "1.18.2-1.20.4",
         "author": "PitaQ",
@@ -654,7 +654,7 @@
     },
     "mcmod_enhancedquarries": {
         "name": "Enhanced Quarries",
-        "description": "クァーリー、フィラーなどを追加するMOD",
+        "description": "クァーリー、フィラーなどを追加するMOD<br />前提MOD: MCPitanLib",
         "version": "1.4.5",
         "mcversion": "1.16.5-1.20.4",
         "author": "PitaQ",
@@ -669,6 +669,83 @@
             "minecraft",
             "mod",
             "fabric"
+        ]
+    },
+    "mcmod_itemalchemy": {
+        "name": "Item Alchemy",
+        "description": "ProjectE/EEのようなEMCや変換テーブルなどを追加するMOD<br />前提MOD: MCPitanLib",
+        "version": "0.8.7",
+        "mcversion": "1.17-1.20.4",
+        "author": "PitaQ, mymai1208, OffsetMonkey538",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/item-alchemy-fabric/files/all?page=1&pageSize=20",
+        "license": "MIT",
+        "site": {
+            "wiki": "https://wikichree.com/pitan76/?Item+Alchemy",
+            "github": "https://github.com/Pitan76/item-alchemy",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/item-alchemy-fabric"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric"
+        ]
+    },
+    "mcmod_yamatogunmod": {
+        "name": "Yamato Gun Mod",
+        "description": "大和砲MOD<br />前提MOD: MCPitanLib",
+        "version": "0.0.10",
+        "mcversion": "1.17-1",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/yamato-gun/files/all?page=1&pageSize=20",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/Pitan76/YamatoGunMod",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/yamato-gun"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric",
+            "forge"
+        ]
+    },
+    "mcmod_pipeplus": {
+        "name": "PipePlus",
+        "description": "パイプMOD<br />前提MOD: MCPitanLib, Simple Pipes",
+        "version": "1.1.4-fix.1",
+        "mcversion": "1.16.4-1.20.1",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/pipeplus/files/all?page=1&pageSize=20",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/PipePlus",
+            "wiki": "https://wikichree.com/pitan76/?PipePlus",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/pipeplus"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric"
+        ]
+    },
+    "mcmod_mod_sound_volume_options": {
+        "name": "Mod Sound Volume Options",
+        "description": "MODのサウンド音量を調整するMOD<br />前提MOD: MCPitanLib",
+        "version": "1.0.2",
+        "mcversion": "1.16.4-1.20.4",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/mod-sound-volume-options/files/all?page=1&pageSize=20",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/mod-volume-options",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/mod-sound-volume-options"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric",
+            "forge",
+            "neoforge"
         ]
     },
     "mcplugin_clearvehicle": {
@@ -851,6 +928,7 @@
         "name": "McSEmeGUI",
         "description": "Minecraft Spigot ServerのコンソールをGUIで操作するSpigotプラグイン<br /><strike>正直昔作ったものなので使い物にならないゴミ</strike>",
         "version": "v1.0.0",
+        "mcversion": "*",
         "author": "PitaQ",
         "url": "https://github.com/PTOM76/McSEmeGUI/releases/download/1.0.3/McSEmeGUI-1.0.3.jar",
         "license": "MIT",
