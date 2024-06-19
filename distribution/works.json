@@ -91,18 +91,37 @@
         ]
     },
     "pukiwiki_bot_plugin": {
-        "name": "Bot",
-        "description": "PukiWikiでBot APIを提供するためのプラグイン",
+        "name": "PukiBot API",
+        "description": "PukiWiki上でBot APIを提供するためのプラグイン",
         "version": "1.3",
         "author": "PitaQ",
         "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/bot.inc.php",
-        "license": "GPLv3",
+        "license": "LGPLv2.1",
         "site": {
-            "pkom": "https://pkom.pitan76.net/?プラグイン/bot.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/bot.inc.php",
+            "解説": "https://gist.github.com/PTOM76/c618a7ca97c7da3510970f7d0764a765"
         },
         "tag": [
             "pukiwiki",
             "plugin"
+        ]
+    },
+    "pukibot_py": {
+        "name": "PukiBot Py",
+        "description": "PukiWiki上でBotを動かすためのPython3用フレームワーク",
+        "version": "1.0",
+        "author": "PitaQ",
+        "url": "https://github.com/PTOM76/PukiBot-Py/archive/refs/tags/v1.0.zip",
+        "license": "LGPLv2.1",
+        "site": {
+            "pkom": "https://pkom.pitan76.net/?プラグイン/bot.inc.php",
+            "解説": "https://gist.github.com/PTOM76/c618a7ca97c7da3510970f7d0764a765"
+        },
+        "tag": [
+            "pukiwiki",
+            "plugin",
+            "framework",
+            "python"
         ]
     },
     "pukiwiki_button_plugin": {
@@ -555,10 +574,9 @@
             "plugin"
         ]
     },
-
     "mcmod_storagebox_for_fabric": {
         "name": "StorageBox for Fabric",
-        "description": "Fabric用のStorageBox<br />前提MOD: Fabric API",
+        "description": "Fabric用のStorageBox",
         "version": "1.4.0",
         "mcversion": "1.15.2-1.20.5",
         "author": "PitaQ",
@@ -748,7 +766,7 @@
     },
     "mcmod_ignischat": {
         "name": "Ignis Chat",
-        "description": "LunaChatのローマ字/漢字かな変換と色付け機能のみをFabricに移植したMOD<br />前提MOD: MCPitanLib",
+        "description": "LunaChatのローマ字/漢字かな変換と色機能をFabricに移植したもの<br />前提MOD: MCPitanLib",
         "version": "1.0.3",
         "mcversion": "1.7.10-1.20.4",
         "author": "PitaQ, mymai1208",
@@ -803,7 +821,7 @@
     },
     "mcmod_techhammers": {
         "name": "Tech Hammers & Excavators",
-        "description": "3x3採掘ツールを追加するVanilla Hammers, Vanilla ExcavatorsとTech RebornのアドオンMOD<br />前提MOD: MCPitanLib, Tech Reborn, Vanilla Hammers/Vanilla Excavators",
+        "description": "Vanilla Hammers/Excavators、TRのアドオンMOD<br />ルビー、電動などの3x3採掘ツールを追加します。<br />前提MOD: MCPitanLib, Tech Reborn, Vanilla Hammers/Excavators",
         "version": "1.0.5",
         "mcversion": "1.18.1-1.19.2",
         "author": "PitaQ",
@@ -821,7 +839,7 @@
     },
     "mcmod_ordinarycrook": {
         "name": "Ordinary Crook",
-        "description": "ExNihiloAdscensioのCrookだけを再現した木の葉を壊すための杖を追加する<br />前提MOD: MCPitanLib",
+        "description": "ExNihiloAdscensioのCrookだけを再現したもの<br />木の葉を壊すための杖を追加する<br />前提MOD: MCPitanLib",
         "version": "1.0.6",
         "mcversion": "1.16.4-1.20.4",
         "author": "PitaQ",
@@ -840,7 +858,7 @@
     },
     "mcmod_additionalsmallstairs": {
         "name": "Additional Small Stairs",
-        "description": "Small Stairsのアドオンです。最新バージョンで追加された階段の小階段を追加します。<br />前提MOD: MCPitanLib, Small Stairs",
+        "description": "Small Stairs (PitaQフォーク版)のアドオンです。<br />最新バージョンで追加された階段の小階段を追加します。<br />前提MOD: MCPitanLib, Small Stairs",
         "version": "1.0.3",
         "mcversion": "1.17-1.20.4",
         "author": "PitaQ",
@@ -922,7 +940,7 @@
 
     "mcmod_smallstairs": {
         "name": "Small Stairs (PitaQ再現版)",
-        "description": "さよ様の「SmallStairs125　小階段MOD」の1.再現です<br />前提MOD: MCPitanLib",
+        "description": "さよ様の「SmallStairs125 小階段MOD」の再現です<br />前提MOD: MCPitanLib",
         "version": "1.1.4",
         "mcversion": "1.18.1-1.20.4",
         "author": "PitaQ, takanasayo (original)",
@@ -1091,6 +1109,7 @@
         "author": "PitaQ",
         "url": "https://github.com/PTOM76/PaperMCDownloader/releases/download/v0.2/PaperMCDownloader-0.2.jar",
         "license": "MIT",
+        "mcversion": "-",
         "site": {
             "github": "https://github.com/PTOM76/PaperMCDownloader"
         },
@@ -1101,13 +1120,16 @@
     "md2pkwk": {
         "name": "MD2PKWK",
         "description": "MarkdownをPukiWiki記法に変換するツール<br />CLIで実行するPHPスクリプトのため、PHPをインストールしてご利用ください",
+        "version": "v1",
         "author": "PitaQ",
         "url": "https://github.com/PTOM76/MD2PKWK/releases/download/1/MD2PKWK.zip",
         "license": "MIT",
+        "createAt": "2022/03/16",
         "site": {
             "github": "https://github.com/PTOM76/MD2PKWK"
         },
         "tag": [
+            "pukiwiki",
             "tool"
         ]
     },
@@ -1117,6 +1139,7 @@
         "author": "PitaQ",
         "url": "https://github.com/PTOM76/png-to-8bit-png-converter-php",
         "license": "MIT",
+        "version": "-",
         "site": {
             "github": "https://github.com/PTOM76/png-to-8bit-png-converter-php"
         },
@@ -1130,6 +1153,7 @@
         "author": "PitaQ",
         "url": "https://github.com/PTOM76/my-tools-tool",
         "license": "MIT",
+        "version": "-",
         "site": {
             "github": "https://github.com/PTOM76/my-tools-tool"
         },
