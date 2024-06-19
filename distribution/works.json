@@ -728,6 +728,71 @@
             "fabric"
         ]
     },
+    
+    "mcmod_mod_": {
+        "name": "",
+        "description": "<br />前提MOD: MCPitanLib",
+        "version": "1.0.0",
+        "mcversion": "1.16.4-1.20.4",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric",
+            "forge",
+            "neoforge"
+        ]
+    },
+    
+    "mcmod_mod_memoryusagetitle": {
+        "name": "Memory Usage Title",
+        "description": "<br />前提MOD: MCPitanLib",
+        "version": "1.0.0",
+        "mcversion": "1.15-1.20.4",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/memory-usage-title",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/memory-usage-title",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/memory-usage-title"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric",
+            "forge",
+            "neoforge"
+        ]
+    },
+    
+
+    "mcmod_mod_smallstairs": {
+        "name": "Small Stairs",
+        "description": "さよ様の「SmallStairs125　小階段MOD」の1.再現です<br />前提MOD: MCPitanLib",
+        "version": "1.1.4",
+        "mcversion": "1.18.1-1.20.4",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/small-stairs119",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/small-stairs119",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/small-stairs119"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric",
+            "forge",
+            "neoforge"
+        ]
+    },
+
     "mcmod_mod_sound_volume_options": {
         "name": "Mod Sound Volume Options",
         "description": "MODのサウンド音量を調整するMOD<br />前提MOD: MCPitanLib",
