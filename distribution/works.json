@@ -659,7 +659,7 @@
         "mcversion": "1.16.5-1.20.4",
         "author": "PitaQ",
         "url": "https://www.curseforge.com/minecraft/mc-mods/enhancedquarries",
-        "license": "MPL-2.0",
+        "license": "MPLv2",
         "site": {
             "wiki": "https://wikichree.com/pitan76/?Enhanced+Quarries",
             "github": "https://github.com/PTOM76/EnhancedQuarries",
@@ -728,18 +728,127 @@
             "fabric"
         ]
     },
-    
-    "mcmod_mod_": {
-        "name": "",
-        "description": "<br />前提MOD: MCPitanLib",
-        "version": "1.0.0",
+    "mcmod_bedrocktools76": {
+        "name": "Bedrock Tools76",
+        "description": "岩盤ツールと黒曜石ツールを追加するMOD<br />前提MOD: MCPitanLib",
+        "version": "1.0.4",
         "mcversion": "1.16.4-1.20.4",
         "author": "PitaQ",
-        "url": "https://www.curseforge.com/minecraft/mc-mods/",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/bedrock-tools76",
         "license": "MIT",
         "site": {
-            "github": "https://github.com/PTOM76/",
-            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/"
+            "github": "https://github.com/Pitan76/bedrock-tools76"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric",
+            "forge"
+        ]
+    },
+    "mcmod_ignischat": {
+        "name": "Ignis Chat",
+        "description": "LunaChatのローマ字/漢字かな変換と色付け機能のみをFabricに移植したMOD<br />前提MOD: MCPitanLib",
+        "version": "1.0.3",
+        "mcversion": "1.7.10-1.20.4",
+        "author": "PitaQ, mymai1208",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/ignischat",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/Pitan76/IgnisChat",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/ignischat"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric",
+            "legacyfabric"
+        ]
+    },
+    "mcmod_materialisation": {
+        "name": "Materialisation (PitaQフォーク版)",
+        "description": "shedaniel氏のMaterialisationを1.17以降へ移植したものです。<br />前提MOD: MCPitanLib (1.20-)",
+        "version": "3.2.0",
+        "mcversion": "1.17-1.20.1",
+        "author": "PitaQ, shedaniel (original)",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/materialisation3",
+        "license": "ApacheLicense v2.0",
+        "site": {
+            "github": "https://github.com/PTOM76/Materialisation",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/materialisation3"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric"
+        ]
+    },
+    "mcmod_classicombat": {
+        "name": "Classicombat (PitaQフォーク版)",
+        "description": "1.8.9/1.7.10の戦闘システムをFabric用に移植したMOD",
+        "version": "1.0.6",
+        "mcversion": "1.16.5-1.19.2",
+        "author": "PitaQ, one_point_o (original)",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/classic-combat-fabric",
+        "license": "GPLv3",
+        "site": {
+            "github": "https://github.com/PTOM76/Classic-Combat-Fabric",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/classic-combat-fabric"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric"
+        ]
+    },
+    "mcmod_techhammers": {
+        "name": "Tech Hammers & Excavators",
+        "description": "3x3採掘ツールを追加するVanilla Hammers, Vanilla ExcavatorsとTech RebornのアドオンMOD<br />前提MOD: MCPitanLib, Tech Reborn, Vanilla Hammers/Vanilla Excavators",
+        "version": "1.0.5",
+        "mcversion": "1.18.1-1.19.2",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/tech-hammers",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/tech-hammers",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/tech-hammers"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric"
+        ]
+    },
+    "mcmod_ordinarycrook": {
+        "name": "Ordinary Crook",
+        "description": "ExNihiloAdscensioのCrookだけを再現した木の葉を壊すための杖を追加する<br />前提MOD: MCPitanLib",
+        "version": "1.0.6",
+        "mcversion": "1.16.4-1.20.4",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/ordinary-crook",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/Pitan76/ordinary-crook",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/ordinary-crook"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric",
+            "forge"
+        ]
+    },
+    "mcmod_additionalsmallstairs": {
+        "name": "Additional Small Stairs",
+        "description": "Small Stairsのアドオンです。最新バージョンで追加された階段の小階段を追加します。<br />前提MOD: MCPitanLib, Small Stairs",
+        "version": "1.0.3",
+        "mcversion": "1.17-1.20.4",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/additional-small-stairs",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/additional-small-stairs",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/additional-small-stairs"
         },
         "tag": [
             "minecraft",
@@ -749,10 +858,49 @@
             "neoforge"
         ]
     },
+    "mcmod_endercane": {
+        "name": "Ender Cane",
+        "description": "エンダーパールを消費してテレポートすることができる杖を追加するMOD<br />前提MOD: MCPitanLib",
+        "version": "1.0.6",
+        "mcversion": "1.17-1.20.4",
+        "author": "PitaQ",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/ender-cane",
+        "license": "MIT",
+        "site": {
+            "github": "https://github.com/PTOM76/EnderCane",
+            "wiki": "https://wikichree.com/pitan76/?Ender+Cane",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/ender-cane"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric",
+            "forge"
+        ]
+    },
+    "mcmod_solomonsrod": {
+        "name": "Solomons Rod (PitaQ再現版)",
+        "description": "さよ様の「ソロモンの杖」の再現のようなものです<br />前提MOD: MCPitanLib",
+        "version": "1.1.1",
+        "mcversion": "1.16-1.20.4",
+        "author": "PitaQ, takanasayo (original)",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/solomons-rod-fabric",
+        "license": "MMPLv1.0",
+        "site": {
+            "github": "https://github.com/PTOM76/Solomons-Rod",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/solomons-rod-fabric"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric",
+            "forge"
+        ]
+    },
     
-    "mcmod_mod_memoryusagetitle": {
+    "mcmod_memoryusagetitle": {
         "name": "Memory Usage Title",
-        "description": "<br />前提MOD: MCPitanLib",
+        "description": "メモリ使用量をタイトルバーに表示するだけのMOD<",
         "version": "1.0.0",
         "mcversion": "1.15-1.20.4",
         "author": "PitaQ",
@@ -772,12 +920,12 @@
     },
     
 
-    "mcmod_mod_smallstairs": {
-        "name": "Small Stairs",
+    "mcmod_smallstairs": {
+        "name": "Small Stairs (PitaQ再現版)",
         "description": "さよ様の「SmallStairs125　小階段MOD」の1.再現です<br />前提MOD: MCPitanLib",
         "version": "1.1.4",
         "mcversion": "1.18.1-1.20.4",
-        "author": "PitaQ",
+        "author": "PitaQ, takanasayo (original)",
         "url": "https://www.curseforge.com/minecraft/mc-mods/small-stairs119",
         "license": "MIT",
         "site": {
@@ -793,7 +941,7 @@
         ]
     },
 
-    "mcmod_mod_sound_volume_options": {
+    "mcmod_sound_volume_options": {
         "name": "Mod Sound Volume Options",
         "description": "MODのサウンド音量を調整するMOD<br />前提MOD: MCPitanLib",
         "version": "1.0.2",
