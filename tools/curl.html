@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../style.css" />
+        <title>Pitan76.NET</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HE7R17Z63N"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HE7R17Z63N');
+        </script>
+        <script src="../lib/js/jquery/jquery.min.js"></script>
+        <script src="../lib/md5.js"></script>
+        <script src="../main.js"></script>
+        <script src="./js/sui.js"></script> 
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-32x32.png" sizes="32x32">
+        <link rel="icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-192x192.png" sizes="192x192">
+        <link rel="apple-touch-icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-180x180.png">
+
+        <style>
+            .main {
+                max-width: 1280px;
+                width: 720px;
+            }
+        </style>
+    </head>
+    <body background="../bg_image.png">
+        <div>
+            <span style="float:left">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="ぴたん(@PitaQ_Modding)の個人サイト「Pitan76.NET」をツイート！" data-url="https://pitan76.net/terms.html" data-hashtags="Pitan76NET" data-lang="ja" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </span>
+            <span style="float:right">
+                <a target="_blank" href="https://twitter.com/PitaQ_Modding"><img style="width:24px;height:24px;" src="../image/twitter.png" /></a>
+                <a target="_blank" href="https://www.youtube.com/@pitaq8539"><img style="width:24px;height:24px;" src="../image/youtube.png" /></a>
+                <a target="_blank" href="https://github.com/PTOM76"><img style="width:24px;height:24px;" src="../image/github.png" /></a>
+                <a href="javascript:copy2board('00438')"><img style="width:24px;height:24px;" src="../image/discord.png" /></a>
+            </span>
+            <br />
+        </div>
+        <div class="title">
+            <h2>Pitan76.NET</h2>
+            <span style="color:white;"><a href="../">トップ</a> > <a href="./">Webツール</a> > webReq</span>
+        </div>
+        <div class="main">
+            <div class="contents">
+                <h3>webReq</h3>
+                <div style="text-align: left; font-size: 15px;">
+                    <script>
+                        function webReq(url, method, contentType, header, body) {
+                            var xhr = new XMLHttpRequest();
+                            xhr.open(method, url, false);
+                            xhr.setRequestHeader("Content-Type", contentType);
+                            var headers = header.split("\n");
+                            for (var i = 0; i < headers.length; i++) {
+                                var h = headers[i].split(":");
+                                xhr.setRequestHeader(h[0], h[1]);
+                            }
+                            xhr.send(body);
+                            return xhr.responseText;
+                        }
+
+                        function copy2board(id) {
+                            var text = document.getElementById(id).value;
+                            navigator.clipboard.writeText(text);
+                        }
+
+                        function prettyPrint(id) {
+                            var text = document.getElementById(id).value;
+                            var obj = JSON.parse(text);
+                            document.getElementById(id).value = JSON.stringify(obj, null, 4);
+                        }
+
+                        function allClear() {
+                            document.getElementById("url").value = "";
+                            document.getElementById("method").value = "GET";
+                            document.getElementById("content-type").value = "application/json";
+                            document.getElementById("header").value = "";
+                            document.getElementById("body").value = "";
+                            document.getElementById("response").value = "";
+                        }
+
+                        function saveCookie() {
+                            var url = document.getElementById("url").value;
+                            var method = document.getElementById("method").value;
+                            var contentType = document.getElementById("content-type").value;
+                            var header = document.getElementById("header").value;
+                            var body = document.getElementById("body").value;
+                            var data = {
+                                "url": url,
+                                "method": method,
+                                "contentType": contentType,
+                                "header": header,
+                                "body": body
+                            };
+                            var json = JSON.stringify(data);
+                            // リストとして保存
+                            var saves = JSON.parse(localStorage.getItem("saves"));
+                            if (saves == null) {
+                                saves = [];
+                            }
+                            saves.push(json);
+                            localStorage.setItem("saves", JSON.stringify(saves));
+
+                            alert("Cookieに保存しました。");
+                        }
+
+                        function loadCookie() {
+                            var saves = JSON.parse(localStorage.getItem("saves"));
+                            var index = document.getElementById("saves").selectedIndex;
+                            if (saves != null) {
+                                var data = JSON.parse(saves[index]);
+                                document.getElementById("url").value = data.url;
+                                document.getElementById("method").value = data.method;
+                                document.getElementById("content-type").value = data.contentType;
+                                document.getElementById("header").value = data.header;
+                                document.getElementById("body").value = data.body;
+                            }
+                        }
+
+                        function deleteCookie() {
+                            var saves = JSON.parse(localStorage.getItem("saves"));
+                            var index = document.getElementById("saves").selectedIndex;
+                            if (saves != null) {
+                                saves.splice(index, 1);
+                                localStorage.setItem("saves", JSON.stringify(saves));
+                                alert("Cookieを削除しました。");
+                            }
+                        }
+                    </script>
+
+                    <p>
+                        このツールはウェブでHTTPリクエストを送信し、レスポンスを取得します。
+                    </p>
+                    
+                    <h4 class="modern">URL</h4>
+                    <input type="text" id="url" style="width: 100%;" placeholder="URL" />
+                    <br /><br />
+
+                    <h4 class="modern">メソッド</h4>
+                    <select id="method" style="width: 100%;">
+                        <option value="GET" selected>GET</option>
+                        <option value="POST">POST</option>
+                        <option value="PUT">PUT</option>
+                        <option value="DELETE">DELETE</option>
+                    </select>
+                    <br /><br />
+                    
+                    <h4 class="modern">コンテンツタイプ</h4>
+                    <input type="text" id="content-type" style="width: 100%;" placeholder="application/json" value="application/json" />
+                    <br /><br />
+
+                    <h4 class="modern">ヘッダー</h4>
+                    <textarea id="header" style="width: 100%;" rows="5" placeholder="ヘッダー"></textarea>
+                    <br /><br />
+
+                    <h4 class="modern">ボディ</h4>
+                    <textarea id="body" style="width: 100%;" rows="5" placeholder="ボディ"></textarea>
+
+                    <input type="button" id="send" value="送信" />
+                     | <input type="button" id="save" value="保存" onclick="saveCookie()" />
+
+                    <select id="saves" style="width: 192px;"></select>
+                    <input type="button" id="load" value="読込" onclick="loadCookie()" />
+                    <input type="button" id="delete" value="削除" onclick="deleteCookie()" />
+                     | <input type="button" id="clear" value="クリア" onclick="allClear()" />
+
+                    <hr />
+                    <br />
+
+                    <h4 class="modern">レスポンス</h4>
+                    <button onclick="copy2board('response')">コピー</button>
+                    <button onclick="prettyPrint('response')">整形</button>
+                    <textarea id="response" style="width: 100%;" rows="30" disabled></textarea>
+                    
+                    <script>
+                        $btn = document.getElementById("send");
+                        $btn.addEventListener('click', function() {
+                            $url = document.getElementById("url").value;
+                            $method = document.getElementById("method").value;
+                            $content_type = document.getElementById("content-type").value;
+                            $header = document.getElementById("header").value;
+                            $body = document.getElementById("body").value;
+                            $response = document.getElementById("response").value = webReq($url, $method, $content_type, $header, $body);
+                        });
+
+                        let saves = document.getElementById("saves");
+                        // ローカルに保存されているものをoptionに追加
+                        let saved = JSON.parse(localStorage.getItem("saves"));
+                        if (saved != null) {
+                            for (let i = 0; i < saved.length; i++) {
+                                let option = document.createElement("option");
+                                option.text = "Save " + i;
+                                saves.add(option);
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p id="footer" style="color:white;">Copyright ©2023-2024 Pitan | E-mail: admin@pitan76.net<br /><a href="../terms.html">利用規約</a> | <a href="../changelog.html">更新履歴</a> | <a href="../contact.html">連絡</a></p>
+        </div>
+    </body>
+</html>
