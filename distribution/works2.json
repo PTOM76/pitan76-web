@@ -4,11 +4,11 @@
         "description": "見出し版折りたたみプラグイン",
         "version": "1.5",
         "author": "PitaQ, 七海",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/accordion.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/accordion.inc.php",
         "license": "GPLv3",
-        "createAt": "2021\/07\/06",
+        "createAt": "2021/07/06",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/accordion.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/accordion.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -20,10 +20,10 @@
         "description": "JavaScriptのalert()関数を用いたダイアログ表示プラグイン",
         "version": "1.0.0",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/alert.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/alert.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/alert.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/alert.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -35,10 +35,10 @@
         "description": "ブログ風なページのリンクを設置するプラグイン",
         "version": "1.1f",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/blink.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/blink.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/blink.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/blink.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -50,10 +50,10 @@
         "description": "折りたたみ機能付き目次プラグイン",
         "version": "1.0",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/bcontents.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/bcontents.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/bcontents.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/bcontents.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -65,10 +65,10 @@
         "description": "背景色を変更するプラグイン",
         "version": "1.0.0",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/bgcolor.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/bgcolor.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/bgcolor.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/bgcolor.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -77,13 +77,13 @@
     },
     "pukiwiki_brecent_plugin": {
         "name": "BlogRecent",
-        "description": "ブログ風更新したページ一覧表示するプラグイン<br \/>(Origin: recent)",
+        "description": "ブログ風更新したページ一覧表示するプラグイン<br />(Origin: recent)",
         "version": "1.1",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/brecent.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/brecent.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/brecent.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/brecent.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -95,11 +95,11 @@
         "description": "PukiWiki上でBot APIを提供するためのプラグイン",
         "version": "1.3",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/bot.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/bot.inc.php",
         "license": "LGPLv2.1",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/bot.inc.php",
-            "解説": "https:\/\/gist.github.com\/PTOM76\/c618a7ca97c7da3510970f7d0764a765"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/bot.inc.php",
+            "解説": "https://gist.github.com/PTOM76/c618a7ca97c7da3510970f7d0764a765"
         },
         "tag": [
             "pukiwiki",
@@ -111,11 +111,11 @@
         "description": "PukiWiki上でBotを動かすためのPython3用フレームワーク",
         "version": "1.0",
         "author": "PitaQ",
-        "url": "https:\/\/github.com\/PTOM76\/PukiBot-Py\/archive\/refs\/tags\/v1.0.zip",
+        "url": "https://github.com/PTOM76/PukiBot-Py/archive/refs/tags/v1.0.zip",
         "license": "LGPLv2.1",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/bot.inc.php",
-            "解説": "https:\/\/gist.github.com\/PTOM76\/c618a7ca97c7da3510970f7d0764a765"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/bot.inc.php",
+            "解説": "https://gist.github.com/PTOM76/c618a7ca97c7da3510970f7d0764a765"
         },
         "tag": [
             "pukiwiki",
@@ -129,10 +129,10 @@
         "description": "ボタン(Button)プラグイン (1.5.X対応版)",
         "version": "1.0.0",
         "author": "PitaQ, reimy",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/button.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/button.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/button.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/button.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -144,10 +144,10 @@
         "description": "ボタン(Submit)プラグイン (1.5.X対応版)",
         "version": "1.0.0",
         "author": "PitaQ, reimy",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/submit.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/submit.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/button.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/button.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -159,10 +159,10 @@
         "description": "チェックボックスプラグイン",
         "version": "1.0",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/checkarea.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/checkarea.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/checkarea.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/checkarea.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -171,13 +171,13 @@
     },
     "pukiwiki_commentplus_plugin": {
         "name": "CommentPlus",
-        "description": "コメントの機能拡張プラグイン<br \/>(Origin: Comment)",
+        "description": "コメントの機能拡張プラグイン<br />(Origin: Comment)",
         "version": "1.0",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/commentplus.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/commentplus.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/commentplus.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/commentplus.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -186,13 +186,13 @@
     },
     "pukiwiki_ctrlcmt_plugin": {
         "name": "CtrlCmt",
-        "description": "管理画面で設定できる機能拡張版コメントプラグイン<br \/>(Origin: comment)",
+        "description": "管理画面で設定できる機能拡張版コメントプラグイン<br />(Origin: comment)",
         "version": "1.02",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/ctrlcmt.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/ctrlcmt.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/ctrlcmt.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/ctrlcmt.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -201,13 +201,13 @@
     },
     "pukiwiki_easyedit_plugin": {
         "name": "EasyEdit",
-        "description": "CKEditor版編集プラグイン<br \/>(Origin: edit, guiedit)",
+        "description": "CKEditor版編集プラグイン<br />(Origin: edit, guiedit)",
         "version": "1.0.9",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/easyedit.zip",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/easyedit.zip",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/easyedit.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/easyedit.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -216,13 +216,13 @@
     },
     "pukiwiki_exrules2_plugin": {
         "name": "exrules2",
-        "description": "ページ内でユーザ定義ルールを設定<br \/>(Origin: exrules)",
+        "description": "ページ内でユーザ定義ルールを設定<br />(Origin: exrules)",
         "version": "1.0.0",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/exrules2.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/exrules2.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/exrules2.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/exrules2.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -234,10 +234,10 @@
         "description": "PukiWiki Plus!のようなフッターを追加するプラグイン",
         "version": "1.0",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/footer.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/footer.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/footer.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/footer.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -249,10 +249,10 @@
         "description": "PukiWiki Plus!のようなヘッダーを追加するプラグイン",
         "version": "1.0",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/header.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/header.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/header.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/header.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -264,10 +264,10 @@
         "description": "Google検索プラグイン",
         "version": "1.0.0",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/google.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/google.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/google.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/google.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -279,10 +279,10 @@
         "description": "リクエストされてつくった見出し(h5)プラグイン",
         "version": "1.0",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/heading5.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/heading5.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/heading5.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/heading5.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -294,10 +294,10 @@
         "description": "ページを一時的に保存して少しだけ処理を軽量化するプラグイン",
         "version": "1.0",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/html_cache.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/html_cache.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/html_cache.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/html_cache.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -309,10 +309,10 @@
         "description": "IPアドレスを記録するプラグイン",
         "version": "1.0",
         "author": "PitaQ",
-        "url": "https:\/\/pukiwiki.sourceforge.io\/?自作プラグイン\/iplog.php",
+        "url": "https://pukiwiki.sourceforge.io/?自作プラグイン/iplog.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/iplog.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/iplog.php"
         },
         "tag": [
             "pukiwiki",
@@ -321,13 +321,13 @@
     },
     "pukiwiki_mlcomment_plugin": {
         "name": "Mluti-lineComment",
-        "description": "リクエストされてつくった複数行コメントプラグイン<br \/>(Origin: comment)",
+        "description": "リクエストされてつくった複数行コメントプラグイン<br />(Origin: comment)",
         "version": "1.1",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/mlcomment.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/mlcomment.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/mlcomment.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/mlcomment.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -336,13 +336,13 @@
     },
     "pukiwiki_mlarticle_plugin": {
         "name": "Mluti-lineComment's Article",
-        "description": "複数行コメント版掲示板プラグイン<br \/>(Origin: article)",
+        "description": "複数行コメント版掲示板プラグイン<br />(Origin: article)",
         "version": "1.1",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/mlarticle.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/mlarticle.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/mlcomment.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/mlcomment.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -354,10 +354,10 @@
         "description": "PHPファイル(evalでの実行)をPukiWikiに埋め込むプラグイン",
         "version": "1.0",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/mytools.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/mytools.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/mytools.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/mytools.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -369,10 +369,10 @@
         "description": "ニコニコ動画の埋め込みプラグイン",
         "version": "1.0.0",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/nicovideo_player.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/nicovideo_player.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/nicovideo_player.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/nicovideo_player.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -381,13 +381,13 @@
     },
     "pukiwiki_pluglist_plugin": {
         "name": "PlugList",
-        "description": "プラグイン一覧を表示するプラグイン<br \/>(Origin: versionlist)",
+        "description": "プラグイン一覧を表示するプラグイン<br />(Origin: versionlist)",
         "version": "1.0.2",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/pluglist.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/pluglist.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/PlugList"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/PlugList"
         },
         "tag": [
             "pukiwiki",
@@ -399,10 +399,10 @@
         "description": "PukiWikiを静的化してHTMLを生成するプラグイン",
         "version": "1.0",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/pukistatic.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/pukistatic.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/pukistatic.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/pukistatic.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -414,10 +414,10 @@
         "description": "GUIで設定できるプラグイン",
         "version": "1.2",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/manageform.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/manageform.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/manageform.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/manageform.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -426,13 +426,13 @@
     },
     "pukiwiki_region2_plugin": {
         "name": "Region.v2",
-        "description": "折りたたみプラグイン<br \/>(Origin: region)",
+        "description": "折りたたみプラグイン<br />(Origin: region)",
         "version": "1.3",
         "author": "PitaQ, xxxxx",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/region2.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/region2.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/region2.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/region2.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -441,13 +441,13 @@
     },
     "pukiwiki_select_navi_plugin": {
         "name": "SelectNavi",
-        "description": "ナビバーにセレクトボックスを追加し、<br \/>Configでカスタマイズできるプラグイン",
+        "description": "ナビバーにセレクトボックスを追加し、<br />Configでカスタマイズできるプラグイン",
         "version": "1.0.0",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/select_navi.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/select_navi.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/select_navi.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/select_navi.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -459,10 +459,10 @@
         "description": "数式プラグイン",
         "version": "1.0",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/tex2.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/tex2.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/tex2.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/tex2.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -474,10 +474,10 @@
         "description": "ページのタイムスタンプ書き換えプラグイン",
         "version": "1.0.2",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/timestamp.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/timestamp.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/timestamp.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/timestamp.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -489,10 +489,10 @@
         "description": "PukiWikiの引っ越し用タイムスタンプバックアッププラグイン",
         "version": "1.0.0",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/timestamp_backup.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/timestamp_backup.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/timestamp_backup.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/timestamp_backup.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -501,13 +501,13 @@
     },
     "pukiwiki_viewedit_plugin": {
         "name": "ViewEdit",
-        "description": "機能拡張リアルタイムプレビュー編集プラグイン<br \/>(Origin: edit)",
+        "description": "機能拡張リアルタイムプレビュー編集プラグイン<br />(Origin: edit)",
         "version": "1.0.1",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/viewedit.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/viewedit.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/viewedit.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/viewedit.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -519,10 +519,10 @@
         "description": "Yahoo! Japan (日本版) 検索プラグイン",
         "version": "1.0.0",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/yahoojp.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/yahoojp.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/yahoojp.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/yahoojp.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -534,10 +534,10 @@
         "description": "Yahoo! (海外版) 検索プラグイン",
         "version": "1.0.0",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/yahoo.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/yahoo.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/yahoo.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/yahoo.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -549,10 +549,10 @@
         "description": "YouTubeの動画埋め込みプラグイン",
         "version": "1.0.0",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/youtube.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/youtube.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/youtube.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/youtube.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -564,10 +564,10 @@
         "description": "YouTubeの検索ボックス設置プラグイン",
         "version": "1.0.0",
         "author": "PitaQ",
-        "url": "https:\/\/raw.githubusercontent.com\/PTOM76\/PukiWiki-Plugins\/main\/youtube_sr.inc.php",
+        "url": "https://raw.githubusercontent.com/PTOM76/PukiWiki-Plugins/main/youtube_sr.inc.php",
         "license": "GPLv3",
         "site": {
-            "pkom": "https:\/\/pkom.pitan76.net\/?プラグイン\/youtube_sr.inc.php"
+            "pkom": "https://pkom.pitan76.net/?プラグイン/youtube_sr.inc.php"
         },
         "tag": [
             "pukiwiki",
@@ -580,15 +580,15 @@
         "version": "1.4.0",
         "mcversion": "1.15.2-1.20.6",
         "author": "PitaQ",
-        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/storagebox-fabric",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/storagebox-fabric",
         "license": "MIT",
         "cf_projectid": 517673,
-        "createAt": "2021\/08\/19",
-        "updateAt": "2024\/05\/23",
+        "createAt": "2021/04/19",
+        "updateAt": "2024/03/23",
         "site": {
-            "wiki": "https:\/\/wikichree.com\/pitan76\/?Storage+Box+for+Fabric",
-            "github": "https:\/\/github.com\/PTOM76\/storagebox-fabric",
-            "curseforge": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/storagebox-fabric"
+            "wiki": "https://wikichree.com/pitan76/?Storage+Box+for+Fabric",
+            "github": "https://github.com/PTOM76/storagebox-fabric",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/storagebox-fabric"
         },
         "tag": [
             "minecraft",
@@ -598,18 +598,18 @@
     },
     "mcmod_simple_uncraftingtable": {
         "name": "Simple Uncrafting Table",
-        "description": "アイテムを分解するための簡単な分解テーブル<br \/>前提MOD: MCPitanLib",
+        "description": "アイテムを分解するための簡単な分解テーブル<br />前提MOD: MCPitanLib",
         "version": "1.3.4",
         "mcversion": "1.16.5-1.20.4",
         "author": "PitaQ",
-        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/simple-uncrafting-table-fabric",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/simple-uncrafting-table-fabric",
         "license": "MIT",
         "cf_projectid": 523423,
-        "createAt": "2021\/09\/04",
-        "updateAt": "2024\/04\/06",
+        "createAt": "-",
+        "updateAt": "-",
         "site": {
-            "wiki": "https:\/\/wikichree.com\/pitan76\/?Simple+Uncrafting+Table",
-            "curseforge": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/simple-uncrafting-table-fabric"
+            "wiki": "https://wikichree.com/pitan76/?Simple+Uncrafting+Table",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/simple-uncrafting-table-fabric"
         },
         "tag": [
             "minecraft",
@@ -621,18 +621,18 @@
     },
     "mcmod_mcpitanlib": {
         "name": "MCPitanLib",
-        "description": "自分用MOD開発ライブラリ<br \/>前提MOD: Archtectury API, Fabric API (Fabricのみ)",
+        "description": "自分用MOD開発ライブラリ<br />前提MOD: Archtectury API, Fabric API (Fabricのみ)",
         "version": "2.2.4",
         "mcversion": "1.16.5-1.20.4",
         "author": "PitaQ",
-        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/mcpitanlibarch",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/mcpitanlibarch",
         "license": "MIT",
         "cf_projectid": 682213,
-        "createAt": "2022\/09\/27",
-        "updateAt": "2024\/04\/06",
+        "createAt": "-",
+        "updateAt": "-",
         "site": {
-            "github": "https:\/\/github.com\/Pitan76\/MCPitanLib",
-            "curseforge": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/mcpitanlibarch"
+            "github": "https://github.com/Pitan76/MCPitanLib",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/mcpitanlibarch"
         },
         "tag": [
             "minecraft",
@@ -645,18 +645,18 @@
     },
     "mcmod_advancedreborn": {
         "name": "AdvancedReborn",
-        "description": "TechRebornに便利なアイテム、マシンなどを追加するアドオンMOD<br \/>前提MOD: MCPitanLib, TechReborn",
+        "description": "TechRebornに便利なアイテム、マシンなどを追加するアドオンMOD<br />前提MOD: MCPitanLib, TechReborn",
         "version": "1.2.8-fix",
         "mcversion": "1.16.5-1.20.4",
         "author": "PitaQ",
-        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/advancedreborn",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/advancedreborn",
         "license": "MIT",
         "cf_projectid": 543089,
-        "createAt": "2021\/10\/31",
-        "updateAt": "2024\/03\/29",
+        "createAt": "-",
+        "updateAt": "-",
         "site": {
-            "wiki": "https:\/\/wikichree.com\/pitan76\/?AdvancedReborn",
-            "curseforge": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/advancedreborn"
+            "wiki": "https://wikichree.com/pitan76/?AdvancedReborn",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/advancedreborn"
         },
         "tag": [
             "minecraft",
@@ -667,18 +667,18 @@
     },
     "mcmod_spacecube": {
         "name": "Space Cube",
-        "description": "Compact Machinesのようなポケットディメンションを追加するMOD<br \/>前提MOD: MCPitanLib",
+        "description": "Compact Machinesのようなポケットディメンションを追加するMOD<br />前提MOD: MCPitanLib",
         "version": "0.9.6",
         "mcversion": "1.18.2-1.20.4",
         "author": "PitaQ",
-        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/spacecube",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/spacecube",
         "license": "MIT",
         "cf_projectid": 964401,
-        "createAt": "2024\/01\/20",
-        "updateAt": "2024\/03\/26",
+        "createAt": "-",
+        "updateAt": "-",
         "site": {
-            "wiki": "https:\/\/wikichree.com\/pitan76\/?Space+Cube",
-            "curseforge": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/spacecube"
+            "wiki": "https://wikichree.com/pitan76/?Space+Cube",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/spacecube"
         },
         "tag": [
             "minecraft",
@@ -688,19 +688,19 @@
     },
     "mcmod_enhancedquarries": {
         "name": "Enhanced Quarries",
-        "description": "クァーリー、フィラーなどを追加するMOD<br \/>前提MOD: MCPitanLib",
+        "description": "クァーリー、フィラーなどを追加するMOD<br />前提MOD: MCPitanLib",
         "version": "1.4.5",
         "mcversion": "1.16.5-1.20.4",
         "author": "PitaQ",
-        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/enhancedquarries",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/enhancedquarries",
         "license": "MPLv2",
         "cf_projectid": 528338,
-        "createAt": "2021\/09\/18",
-        "updateAt": "2024\/03\/04",
+        "createAt": "-",
+        "updateAt": "-",
         "site": {
-            "wiki": "https:\/\/wikichree.com\/pitan76\/?Enhanced+Quarries",
-            "github": "https:\/\/github.com\/PTOM76\/EnhancedQuarries",
-            "curseforge": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/enhancedquarries"
+            "wiki": "https://wikichree.com/pitan76/?Enhanced+Quarries",
+            "github": "https://github.com/PTOM76/EnhancedQuarries",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/enhancedquarries"
         },
         "tag": [
             "minecraft",
@@ -710,19 +710,19 @@
     },
     "mcmod_itemalchemy": {
         "name": "Item Alchemy",
-        "description": "ProjectE\/EEのようなEMCや変換テーブルなどを追加するMOD<br \/>前提MOD: MCPitanLib",
+        "description": "ProjectE/EEのようなEMCや変換テーブルなどを追加するMOD<br />前提MOD: MCPitanLib",
         "version": "0.8.7",
         "mcversion": "1.17-1.20.4",
         "author": "PitaQ, mymai1208, OffsetMonkey538",
-        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/item-alchemy-fabric",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/item-alchemy-fabric",
         "license": "MIT",
         "cf_projectid": 697926,
-        "createAt": "2022\/11\/05",
-        "updateAt": "2024\/03\/25",
+        "createAt": "-",
+        "updateAt": "-",
         "site": {
-            "wiki": "https:\/\/wikichree.com\/pitan76\/?Item+Alchemy",
-            "github": "https:\/\/github.com\/Pitan76\/item-alchemy",
-            "curseforge": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/item-alchemy-fabric"
+            "wiki": "https://wikichree.com/pitan76/?Item+Alchemy",
+            "github": "https://github.com/Pitan76/item-alchemy",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/item-alchemy-fabric"
         },
         "tag": [
             "minecraft",
@@ -732,18 +732,18 @@
     },
     "mcmod_yamatogunmod": {
         "name": "Yamato Gun Mod",
-        "description": "大和砲MOD<br \/>前提MOD: MCPitanLib",
+        "description": "大和砲MOD<br />前提MOD: MCPitanLib",
         "version": "0.0.10",
         "mcversion": "1.17-1",
         "author": "PitaQ",
-        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/yamato-gun",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/yamato-gun",
         "license": "MIT",
         "cf_projectid": 889487,
-        "createAt": "2023\/07\/16",
-        "updateAt": "2024\/03\/05",
+        "createAt": "-",
+        "updateAt": "-",
         "site": {
-            "github": "https:\/\/github.com\/Pitan76\/YamatoGunMod",
-            "curseforge": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/yamato-gun"
+            "github": "https://github.com/Pitan76/YamatoGunMod",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/yamato-gun"
         },
         "tag": [
             "minecraft",
@@ -754,19 +754,19 @@
     },
     "mcmod_pipeplus": {
         "name": "PipePlus",
-        "description": "パイプMOD<br \/>前提MOD: MCPitanLib, Simple Pipes",
+        "description": "パイプMOD<br />前提MOD: MCPitanLib, Simple Pipes",
         "version": "1.1.4-fix.1",
         "mcversion": "1.16.4-1.20.1",
         "author": "PitaQ",
-        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/pipeplus",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/pipeplus",
         "license": "MIT",
         "cf_projectid": 514438,
-        "createAt": "2021\/08\/11",
-        "updateAt": "2024\/03\/06",
+        "createAt": "-",
+        "updateAt": "-",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/PipePlus",
-            "wiki": "https:\/\/wikichree.com\/pitan76\/?PipePlus",
-            "curseforge": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/pipeplus"
+            "github": "https://github.com/PTOM76/PipePlus",
+            "wiki": "https://wikichree.com/pitan76/?PipePlus",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/pipeplus"
         },
         "tag": [
             "minecraft",
@@ -776,17 +776,17 @@
     },
     "mcmod_bedrocktools76": {
         "name": "Bedrock Tools76",
-        "description": "岩盤ツールと黒曜石ツールを追加するMOD<br \/>前提MOD: MCPitanLib",
+        "description": "岩盤ツールと黒曜石ツールを追加するMOD<br />前提MOD: MCPitanLib",
         "version": "1.0.4",
         "mcversion": "1.16.4-1.20.4",
         "author": "PitaQ",
-        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/bedrock-tools76",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/bedrock-tools76",
         "license": "MIT",
         "cf_projectid": 971077,
-        "createAt": "2024\/02\/05",
-        "updateAt": "2024\/02\/19",
+        "createAt": "-",
+        "updateAt": "-",
         "site": {
-            "github": "https:\/\/github.com\/Pitan76\/bedrock-tools76"
+            "github": "https://github.com/Pitan76/bedrock-tools76"
         },
         "tag": [
             "minecraft",
@@ -797,18 +797,18 @@
     },
     "mcmod_ignischat": {
         "name": "Ignis Chat",
-        "description": "LunaChatのローマ字\/漢字かな変換と色機能をFabricに移植したもの<br \/>前提MOD: MCPitanLib",
+        "description": "LunaChatのローマ字/漢字かな変換と色機能をFabricに移植したもの<br />前提MOD: MCPitanLib",
         "version": "1.0.3",
         "mcversion": "1.7.10-1.20.4",
         "author": "PitaQ, mymai1208",
-        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/ignischat",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/ignischat",
         "license": "LGPLv3",
         "cf_projectid": 898169,
-        "createAt": "2023\/08\/03",
-        "updateAt": "2024\/01\/11",
+        "createAt": "-",
+        "updateAt": "-",
         "site": {
-            "github": "https:\/\/github.com\/Pitan76\/IgnisChat",
-            "curseforge": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/ignischat"
+            "github": "https://github.com/Pitan76/IgnisChat",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/ignischat"
         },
         "tag": [
             "minecraft",
@@ -819,18 +819,18 @@
     },
     "mcmod_materialisation": {
         "name": "Materialisation (PitaQフォーク版)",
-        "description": "shedaniel氏のMaterialisationを1.17以降へ移植したものです。<br \/>前提MOD: MCPitanLib (1.20-)",
+        "description": "shedaniel氏のMaterialisationを1.17以降へ移植したものです。<br />前提MOD: MCPitanLib (1.20-)",
         "version": "3.2.0",
         "mcversion": "1.17-1.20.1",
         "author": "PitaQ, shedaniel (original)",
-        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/materialisation3",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/materialisation3",
         "license": "ApacheLicense v2.0",
         "cf_projectid": 645402,
-        "createAt": "2022\/07\/16",
-        "updateAt": "2023\/07\/14",
+        "createAt": "-",
+        "updateAt": "-",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/Materialisation",
-            "curseforge": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/materialisation3"
+            "github": "https://github.com/PTOM76/Materialisation",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/materialisation3"
         },
         "tag": [
             "minecraft",
@@ -840,18 +840,18 @@
     },
     "mcmod_classicombat": {
         "name": "Classicombat (PitaQフォーク版)",
-        "description": "1.8.9\/1.7.10の戦闘システムをFabric用に移植したMOD",
+        "description": "1.8.9/1.7.10の戦闘システムをFabric用に移植したMOD",
         "version": "1.0.6",
         "mcversion": "1.16.5-1.19.3",
         "author": "PitaQ, one_point_o (original)",
-        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/classic-combat-fabric",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/classic-combat-fabric",
         "license": "GPLv3",
         "cf_projectid": 604161,
-        "createAt": "2022\/04\/02",
-        "updateAt": "2022\/06\/15",
+        "createAt": "-",
+        "updateAt": "-",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/Classic-Combat-Fabric",
-            "curseforge": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/classic-combat-fabric"
+            "github": "https://github.com/PTOM76/Classic-Combat-Fabric",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/classic-combat-fabric"
         },
         "tag": [
             "minecraft",
@@ -861,18 +861,18 @@
     },
     "mcmod_techhammers": {
         "name": "Tech Hammers & Excavators",
-        "description": "Vanilla Hammers\/Excavators、TRのアドオンMOD<br \/>ルビー、電動などの3x3採掘ツールを追加します。<br \/>前提MOD: MCPitanLib, Tech Reborn, Vanilla Hammers\/Excavators",
+        "description": "Vanilla Hammers/Excavators、TRのアドオンMOD<br />ルビー、電動などの3x3採掘ツールを追加します。<br />前提MOD: MCPitanLib, Tech Reborn, Vanilla Hammers/Excavators",
         "version": "1.0.5",
         "mcversion": "1.18.1-1.19.2",
         "author": "PitaQ",
-        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/tech-hammers",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/tech-hammers",
         "license": "MIT",
         "cf_projectid": 960741,
-        "createAt": "2024\/01\/11",
-        "updateAt": "2024\/02\/15",
+        "createAt": "-",
+        "updateAt": "-",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/tech-hammers",
-            "curseforge": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/tech-hammers"
+            "github": "https://github.com/PTOM76/tech-hammers",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/tech-hammers"
         },
         "tag": [
             "minecraft",
@@ -882,18 +882,18 @@
     },
     "mcmod_ordinarycrook": {
         "name": "Ordinary Crook",
-        "description": "ExNihiloAdscensioのCrookだけを再現したもの<br \/>木の葉を壊すための杖を追加する<br \/>前提MOD: MCPitanLib",
+        "description": "ExNihiloAdscensioのCrookだけを再現したもの<br />木の葉を壊すための杖を追加する<br />前提MOD: MCPitanLib",
         "version": "1.0.6",
         "mcversion": "1.16.4-1.20.4",
         "author": "PitaQ",
-        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/ordinary-crook",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/ordinary-crook",
         "license": "MIT",
         "cf_projectid": 683097,
-        "createAt": "2022\/10\/01",
-        "updateAt": "2024\/02\/15",
+        "createAt": "-",
+        "updateAt": "-",
         "site": {
-            "github": "https:\/\/github.com\/Pitan76\/ordinary-crook",
-            "curseforge": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/ordinary-crook"
+            "github": "https://github.com/Pitan76/ordinary-crook",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/ordinary-crook"
         },
         "tag": [
             "minecraft",
@@ -904,18 +904,18 @@
     },
     "mcmod_additionalsmallstairs": {
         "name": "Additional Small Stairs",
-        "description": "Small Stairs (PitaQフォーク版)のアドオンです。<br \/>最新バージョンで追加された階段の小階段を追加します。<br \/>前提MOD: MCPitanLib, Small Stairs",
+        "description": "Small Stairs (PitaQフォーク版)のアドオンです。<br />最新バージョンで追加された階段の小階段を追加します。<br />前提MOD: MCPitanLib, Small Stairs",
         "version": "1.0.3",
         "mcversion": "1.17-1.20.4",
         "author": "PitaQ",
         "cf_projectid": 945609,
-        "createAt": "2023\/12\/02",
-        "updateAt": "2024\/02\/20",
-        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/additional-small-stairs",
+        "createAt": "-",
+        "updateAt": "-",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/additional-small-stairs",
         "license": "MIT",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/additional-small-stairs",
-            "curseforge": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/additional-small-stairs"
+            "github": "https://github.com/PTOM76/additional-small-stairs",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/additional-small-stairs"
         },
         "tag": [
             "minecraft",
@@ -927,19 +927,19 @@
     },
     "mcmod_endercane": {
         "name": "Ender Cane",
-        "description": "エンダーパールを消費してテレポートすることができる杖を追加するMOD<br \/>前提MOD: MCPitanLib",
+        "description": "エンダーパールを消費してテレポートすることができる杖を追加するMOD<br />前提MOD: MCPitanLib",
         "version": "1.0.6",
         "mcversion": "1.17-1.20.4",
         "author": "PitaQ",
-        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/ender-cane",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/ender-cane",
         "license": "MIT",
         "cf_projectid": 834713,
-        "createAt": "2023\/03\/06",
-        "updateAt": "2024\/02\/15",
+        "createAt": "-",
+        "updateAt": "-",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/EnderCane",
-            "wiki": "https:\/\/wikichree.com\/pitan76\/?Ender+Cane",
-            "curseforge": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/ender-cane"
+            "github": "https://github.com/PTOM76/EnderCane",
+            "wiki": "https://wikichree.com/pitan76/?Ender+Cane",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/ender-cane"
         },
         "tag": [
             "minecraft",
@@ -950,18 +950,18 @@
     },
     "mcmod_solomonsrod": {
         "name": "Solomons Rod (PitaQ再現版)",
-        "description": "さよ様の「ソロモンの杖」の再現のようなものです<br \/>前提MOD: MCPitanLib",
+        "description": "さよ様の「ソロモンの杖」の再現のようなものです<br />前提MOD: MCPitanLib",
         "version": "1.1.1",
         "mcversion": "1.16-1.20.4",
         "author": "PitaQ, takanasayo (original)",
-        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/solomons-rod-fabric",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/solomons-rod-fabric",
         "license": "MMPLv1.0",
         "cf_projectid": 519836,
-        "createAt": "2021\/08\/23",
-        "updateAt": "2024\/02\/15",
+        "createAt": "-",
+        "updateAt": "-",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/Solomons-Rod",
-            "curseforge": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/solomons-rod-fabric"
+            "github": "https://github.com/PTOM76/Solomons-Rod",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/solomons-rod-fabric"
         },
         "tag": [
             "minecraft",
@@ -970,20 +970,21 @@
             "forge"
         ]
     },
+    
     "mcmod_memoryusagetitle": {
         "name": "Memory Usage Title",
         "description": "メモリ使用量をタイトルバーに表示するだけのMOD<",
         "version": "1.0.0",
         "mcversion": "1.15-1.20.4",
         "author": "PitaQ",
-        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/memory-usage-title",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/memory-usage-title",
         "license": "MIT",
         "cf_projectid": 973764,
-        "createAt": "2024\/02\/12",
-        "updateAt": "2024\/02\/20",
+        "createAt": "-",
+        "updateAt": "-",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/memory-usage-title",
-            "curseforge": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/memory-usage-title"
+            "github": "https://github.com/PTOM76/memory-usage-title",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/memory-usage-title"
         },
         "tag": [
             "minecraft",
@@ -993,20 +994,22 @@
             "neoforge"
         ]
     },
+    
+
     "mcmod_smallstairs": {
         "name": "Small Stairs (PitaQ再現版)",
-        "description": "さよ様の「SmallStairs125 小階段MOD」の再現です<br \/>前提MOD: MCPitanLib",
+        "description": "さよ様の「SmallStairs125 小階段MOD」の再現です<br />前提MOD: MCPitanLib",
         "version": "1.1.4",
         "mcversion": "1.18.1-1.20.4",
         "author": "PitaQ, takanasayo (original)",
-        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/small-stairs119",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/small-stairs119",
         "license": "MIT",
         "cf_projectid": 687162,
-        "createAt": "2022\/10\/09",
-        "updateAt": "2024\/02\/20",
+        "createAt": "-",
+        "updateAt": "-",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/small-stairs119",
-            "curseforge": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/small-stairs119"
+            "github": "https://github.com/PTOM76/small-stairs119",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/small-stairs119"
         },
         "tag": [
             "minecraft",
@@ -1016,20 +1019,21 @@
             "neoforge"
         ]
     },
+
     "mcmod_sound_volume_options": {
         "name": "Mod Sound Volume Options",
-        "description": "MODのサウンド音量を調整するMOD<br \/>前提MOD: MCPitanLib",
+        "description": "MODのサウンド音量を調整するMOD<br />前提MOD: MCPitanLib",
         "version": "1.0.2",
         "mcversion": "1.16.4-1.20.4",
         "author": "PitaQ",
-        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/mod-sound-volume-options",
+        "url": "https://www.curseforge.com/minecraft/mc-mods/mod-sound-volume-options",
         "license": "MIT",
         "cf_projectid": 981874,
-        "createAt": "2024\/03\/02",
-        "updateAt": "2024\/03\/04",
+        "createAt": "-",
+        "updateAt": "-",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/mod-volume-options",
-            "curseforge": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/mod-sound-volume-options"
+            "github": "https://github.com/PTOM76/mod-volume-options",
+            "curseforge": "https://www.curseforge.com/minecraft/mc-mods/mod-sound-volume-options"
         },
         "tag": [
             "minecraft",
@@ -1041,33 +1045,31 @@
     },
     "mcplugin_clearvehicle": {
         "name": "ClearVehicle",
-        "description": "乗り物（トロッコ、ボート）の数をConfigで制限するSpigotプラグイン<br \/>※1.12.2以外のバージョンでの動作確認はしていません",
+        "description": "乗り物（トロッコ、ボート）の数をConfigで制限するSpigotプラグイン<br />※1.12.2以外のバージョンでの動作確認はしていません",
         "version": "1.0.2",
         "mcversion": "1.12.2",
         "author": "PitaQ",
-        "url": "https:\/\/dev.bukkit.org\/projects\/clearvehicle\/files",
+        "url": "https://dev.bukkit.org/projects/clearvehicle/files",
         "license": "MIT",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/ClearVehicle",
-            "bukkit.org": "https:\/\/dev.bukkit.org\/projects\/clearvehicle"
+            "github": "https://github.com/PTOM76/ClearVehicle",
+            "bukkit.org": "https://dev.bukkit.org/projects/clearvehicle"
         },
         "tag": [
             "minecraft",
             "plugin",
             "spigot"
-        ],
-        "createAt": "1970\/01\/01",
-        "updateAt": "1970\/01\/01"
+        ]
     },
     "mmdplugin_install_manager": {
         "name": "MMD Plugin Install Manager (PitaQフォーク版)",
         "description": "MMD Plugin Install Managerを現時点で最新のv9.32対応に対応させたフォーク版",
         "version": "v0.03",
         "author": "PitaQ, oigami (original)",
-        "url": "https:\/\/github.com\/PTOM76\/MMDPluginInstallManager\/releases\/download\/v0.03\/MMDPluginInstaller.zip",
+        "url": "https://github.com/PTOM76/MMDPluginInstallManager/releases/download/v0.03/MMDPluginInstaller.zip",
         "license": "MIT",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/MMDPluginInstallManager"
+            "github": "https://github.com/PTOM76/MMDPluginInstallManager"
         },
         "tag": [
             "mmd",
@@ -1076,13 +1078,13 @@
     },
     "mmdplugin_discordrpc": {
         "name": "MMDDiscordRPC",
-        "description": "DiscordにMMDのRPCを表示するプラグイン<br \/>前提プラグイン: MMDPlugin",
+        "description": "DiscordにMMDのRPCを表示するプラグイン<br />前提プラグイン: MMDPlugin",
         "version": "1.0.0",
         "author": "PitaQ",
-        "url": "https:\/\/github.com\/PTOM76\/MMDDiscordRPC\/releases\/download\/1.0\/MMDDiscordRPC.zip",
+        "url": "https://github.com/PTOM76/MMDDiscordRPC/releases/download/1.0/MMDDiscordRPC.zip",
         "license": "MIT",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/MMDDiscordRPC"
+            "github": "https://github.com/PTOM76/MMDDiscordRPC"
         },
         "tag": [
             "mmd",
@@ -1091,13 +1093,13 @@
     },
     "mmdplugin_mmdutility": {
         "name": "MMDUtility (PitaQフォーク版)",
-        "description": "oigami氏の便利プラグインであるMMDUtilityを最新のv9.32に対応させたフォーク版<br \/>前提プラグイン: MMDPlugin",
+        "description": "oigami氏の便利プラグインであるMMDUtilityを最新のv9.32に対応させたフォーク版<br />前提プラグイン: MMDPlugin",
         "version": "v0.12.1",
         "author": "PitaQ, oigami (original)",
-        "url": "https:\/\/github.com\/PTOM76\/MMDUtility\/releases\/download\/v0.12.1\/MMDUtility_v0.12.1_x64.zip",
+        "url": "https://github.com/PTOM76/MMDUtility/releases/download/v0.12.1/MMDUtility_v0.12.1_x64.zip",
         "license": "MIT",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/MMDUtility"
+            "github": "https://github.com/PTOM76/MMDUtility"
         },
         "tag": [
             "mmd",
@@ -1106,13 +1108,13 @@
     },
     "mmdplugin_mmdplugindll": {
         "name": "MMDPluginDLL (PitaQフォーク版)",
-        "description": "Soul-chan氏のMMDPluginDLLを最新のv9.32に対応させたフォーク版<br \/>前提プラグイン: MMDPlugin",
+        "description": "Soul-chan氏のMMDPluginDLLを最新のv9.32に対応させたフォーク版<br />前提プラグイン: MMDPlugin",
         "version": "1.0.0.1",
         "author": "PitaQ, Soul-chan (original)",
-        "url": "https:\/\/github.com\/PTOM76\/MMDPluginDLL\/releases\/download\/1.0.0.1\/MMDPluginDLL.zip",
+        "url": "https://github.com/PTOM76/MMDPluginDLL/releases/download/1.0.0.1/MMDPluginDLL.zip",
         "license": "MIT",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/MMDPluginDLL"
+            "github": "https://github.com/PTOM76/MMDPluginDLL"
         },
         "tag": [
             "mmd",
@@ -1124,10 +1126,10 @@
         "description": "MMDPlugin用のプラグイン開発用テンプレート",
         "version": "1.0.0",
         "author": "PitaQ",
-        "url": "https:\/\/github.com\/PTOM76\/mmdplugin-ExamplePlugin",
+        "url": "https://github.com/PTOM76/mmdplugin-ExamplePlugin",
         "license": "MIT",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/mmdplugin-ExamplePlugin"
+            "github": "https://github.com/PTOM76/mmdplugin-ExamplePlugin"
         },
         "tag": [
             "mmd",
@@ -1137,13 +1139,13 @@
     },
     "git_account_manager": {
         "name": "Git Account Manager",
-        "description": "Gitアカウントを複数管理するための支援ツール<br \/>Windowsのみ対応",
+        "description": "Gitアカウントを複数管理するための支援ツール<br />Windowsのみ対応",
         "version": "v1.0.0",
         "author": "PitaQ",
-        "url": "https:\/\/github.com\/PTOM76\/Git-Account-Manager\/releases\/download\/v1.0.0\/Git_Account_Manager_v1.0.0.zip",
+        "url": "https://github.com/PTOM76/Git-Account-Manager/releases/download/v1.0.0/Git_Account_Manager_v1.0.0.zip",
         "license": "MIT",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/Git-Account-Manager"
+            "github": "https://github.com/PTOM76/Git-Account-Manager"
         },
         "tag": [
             "tool"
@@ -1151,13 +1153,13 @@
     },
     "discord_turnstile_verify_bot": {
         "name": "Turnstile Verify",
-        "description": "TurnstileでDiscordのユーザー認証を行うためのDiscord用Bot<br \/>PHPのソースコードのみなので各自で環境を用意してください",
+        "description": "TurnstileでDiscordのユーザー認証を行うためのDiscord用Bot<br />PHPのソースコードのみなので各自で環境を用意してください",
         "version": "v1.0.0",
         "author": "PitaQ",
-        "url": "https:\/\/github.com\/PTOM76\/discord-turnstile-verify-bot",
+        "url": "https://github.com/PTOM76/discord-turnstile-verify-bot",
         "license": "MIT",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/discord-turnstile-verify-bot"
+            "github": "https://github.com/PTOM76/discord-turnstile-verify-bot"
         },
         "tag": [
             "discord",
@@ -1166,14 +1168,14 @@
     },
     "paper_mc_downloader": {
         "name": "PaperMC Downloader",
-        "description": "PaperMCのビルドをダウンロードするための支援ツール<br \/>Java 8以上が必要",
+        "description": "PaperMCのビルドをダウンロードするための支援ツール<br />Java 8以上が必要",
         "version": "v0.2",
         "author": "PitaQ",
-        "url": "https:\/\/github.com\/PTOM76\/PaperMCDownloader\/releases\/download\/v0.2\/PaperMCDownloader-0.2.jar",
+        "url": "https://github.com/PTOM76/PaperMCDownloader/releases/download/v0.2/PaperMCDownloader-0.2.jar",
         "license": "MIT",
         "mcversion": "-",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/PaperMCDownloader"
+            "github": "https://github.com/PTOM76/PaperMCDownloader"
         },
         "tag": [
             "tool"
@@ -1181,14 +1183,14 @@
     },
     "md2pkwk": {
         "name": "MD2PKWK",
-        "description": "MarkdownをPukiWiki記法に変換するツール<br \/>CLIで実行するPHPスクリプトのため、PHPをインストールしてご利用ください",
+        "description": "MarkdownをPukiWiki記法に変換するツール<br />CLIで実行するPHPスクリプトのため、PHPをインストールしてご利用ください",
         "version": "v1",
         "author": "PitaQ",
-        "url": "https:\/\/github.com\/PTOM76\/MD2PKWK\/releases\/download\/1\/MD2PKWK.zip",
+        "url": "https://github.com/PTOM76/MD2PKWK/releases/download/1/MD2PKWK.zip",
         "license": "MIT",
-        "createAt": "2022\/03\/16",
+        "createAt": "2022/03/16",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/MD2PKWK"
+            "github": "https://github.com/PTOM76/MD2PKWK"
         },
         "tag": [
             "pukiwiki",
@@ -1197,13 +1199,13 @@
     },
     "png-to-8bit-png-converter": {
         "name": "PNG to 8bit PNG Converter",
-        "description": "PNG画像を8bit PNG画像に変換するツール<br \/>サーバーはLinux推奨です。",
+        "description": "PNG画像を8bit PNG画像に変換するツール<br />サーバーはLinux推奨です。",
         "author": "PitaQ",
-        "url": "https:\/\/github.com\/PTOM76\/png-to-8bit-png-converter-php",
+        "url": "https://github.com/PTOM76/png-to-8bit-png-converter-php",
         "license": "MIT",
         "version": "-",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/png-to-8bit-png-converter-php"
+            "github": "https://github.com/PTOM76/png-to-8bit-png-converter-php"
         },
         "tag": [
             "tool"
@@ -1213,11 +1215,11 @@
         "name": "Pkwk mytools plugin's tools",
         "description": "PukiWikiのmytoolsプラグインで動くツールの詰め合わせ",
         "author": "PitaQ",
-        "url": "https:\/\/github.com\/PTOM76\/my-tools-tool",
+        "url": "https://github.com/PTOM76/my-tools-tool",
         "license": "MIT",
         "version": "-",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/my-tools-tool"
+            "github": "https://github.com/PTOM76/my-tools-tool"
         },
         "tag": [
             "tool"
@@ -1225,21 +1227,19 @@
     },
     "mcsemegui": {
         "name": "McSEmeGUI",
-        "description": "Minecraft Spigot ServerのコンソールをGUIで操作するSpigotプラグイン<br \/><strike>正直昔作ったものなので使い物にならないゴミ<\/strike>",
+        "description": "Minecraft Spigot ServerのコンソールをGUIで操作するSpigotプラグイン<br /><strike>正直昔作ったものなので使い物にならないゴミ</strike>",
         "version": "v1.0.0",
         "mcversion": "*",
         "author": "PitaQ",
-        "url": "https:\/\/github.com\/PTOM76\/McSEmeGUI\/releases\/download\/1.0.3\/McSEmeGUI-1.0.3.jar",
+        "url": "https://github.com/PTOM76/McSEmeGUI/releases/download/1.0.3/McSEmeGUI-1.0.3.jar",
         "license": "MIT",
         "site": {
-            "github": "https:\/\/github.com\/PTOM76\/McSEmeGUI"
+            "github": "https://github.com/PTOM76/McSEmeGUI"
         },
         "tag": [
             "minecraft",
             "plugin",
             "spigot"
-        ],
-        "createAt": "1970\/01\/01",
-        "updateAt": "1970\/01\/01"
+        ]
     }
 }

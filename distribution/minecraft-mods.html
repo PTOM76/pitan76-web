@@ -42,8 +42,14 @@
 
     <div class="indent">
 
-    <p class="cmt">// 今まで配布してきたMinecraft用のMODをまとめています。</p>
-    <p class="cmt">// 基本的にFabric用のMODは前提MODとしてFabric APIが必要です。</p>
+    <p class="cmt">
+        // 今まで配布してきたMinecraft用のMODをまとめています。
+        <br />
+        // 基本的にFabric用のMODは前提MODとしてFabric APIが必要です。
+    </p>
+    <p class="cmt">
+        // 名称、MCバージョン、配布日、更新日のいずれかをクリックすると昇順/降順で並び替えられます。
+    </p>
 
     <span class="rtn">String</span> <span class="var">table</span> = <span class="str">"</span>
     <div class="indent">
@@ -58,7 +64,8 @@
                         <th>MODローダー</th>
                         <th>詳細ページ</th>
                         <th>配布先</th>
-                        <th class="sort" data-sort="date">配布日</th>
+                        <th class="sort" data-sort="createAt">配布日</th>
+                        <th class="sort" data-sort="updateAt">更新日</th>
                     </tr>
                 </thead>
                 <tbody class="list">
@@ -85,6 +92,8 @@
                         let cell6 = row.insertCell(5);
                         let cell7 = row.insertCell(6);
                         let cell8 = row.insertCell(7);
+                        let cell9 = row.insertCell(8);
+
                         cell1.innerHTML = res[i].name;
                         cell2.innerHTML = res[i].description;
                         cell3.innerHTML = res[i].version;
@@ -129,16 +138,22 @@
                         } else {
                             cell8.innerHTML = res[i].createAt;
                         }
+                        if (res[i].updateAt == null) {
+                            cell9.innerHTML = "-";
+                        } else {
+                            cell9.innerHTML = res[i].updateAt;
+                        }
 
                         // クラスを追加
                         cell1.classList.add('name');
                         cell4.classList.add('mcver');
-                        cell8.classList.add('date');
+                        cell8.classList.add('createAt');
+                        cell9.classList.add('updateAt');
                     }
                 }
 
                 var options = {
-                    valueNames: ['name', 'mcver', 'date']
+                    valueNames: ['name', 'mcver', 'createAt', 'updateAt']
                 };
                 var distributelist = new List('distributelist', options);
             }
