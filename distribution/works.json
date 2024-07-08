@@ -970,6 +970,29 @@
             "forge"
         ]
     },
+    "mcmod_compatdatapacks": {
+        "name": "CompatDataPacks",
+        "description": "データパック互換性MOD<br \/>前提MOD: MCPitanLib",
+        "version": "1.0.6",
+        "mcversion": "1.20.4-1.21",
+        "author": "PitaQ",
+        "url": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/compatdatapacks",
+        "license": "MIT",
+        "cf_projectid": 981875,
+        "createAt": "2024\/07\/03",
+        "updateAt": "2024\/07\/04",
+        "site": {
+            "github": "https:\/\/github.com\/Pitan76\/CompatDatapacks",
+            "curseforge": "https:\/\/www.curseforge.com\/minecraft\/mc-mods\/compatdatapacks"
+        },
+        "tag": [
+            "minecraft",
+            "mod",
+            "fabric",
+            "forge",
+            "neoforge"
+        ]
+    },
     "mcmod_memoryusagetitle": {
         "name": "Memory Usage Title",
         "description": "メモリ使用量をタイトルバーに表示するだけのMOD<",
