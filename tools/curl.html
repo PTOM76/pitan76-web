@@ -59,6 +59,9 @@
                                 var h = headers[i].split(":");
                                 xhr.setRequestHeader(h[0], h[1]);
                             }
+                            if (body == '')
+                                body = null;
+                            
                             xhr.send(body);
                             return xhr.responseText;
                         }
