@@ -3,21 +3,42 @@ document.addEventListener("DOMContentLoaded", function() {
     const canvas = document.getElementById("canvas");
     ctx = canvas.getContext("2d");
     ctx.beginPath();
-    ctx.rect(50, 100, 200, 200);
-    //ctx.arc(canvas.width/ 1.5, canvas.height / 2, 75, 0, Math.PI*2);
-    ctx.fillStyle = "#ba3500";
+    ctx.arc(100, 100, 50, 0, Math.PI * 2, false);
+    ctx.fillStyle = "#2f8016";
     ctx.fill();
-    // ctx.stroke();
     ctx.closePath();
+
 });
 
+var isTouch = false;
 
-// clicked
-document.addEventListener("click", function(e) {
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.beginPath();
-    ctx.rect(50+5, 100+5, 190, 190);
-    //ctx.arc(canvas.width/ 1.5, canvas.height / 2, 75, 0, Math.PI*2);
-    ctx.fillStyle = "#ba3500";
-    ctx.fill();
+document.addEventListener("touchstart", function(e) {
+    isTouch = true;
+    touchTime = 0;
+});
+
+document.addEventListener("touchmove", function(e) {
+    if (isTouch) {
+        e.preventDefault();
+        if (touchTime < 5) {
+            touchTime++;
+            return;
+        }
+
+        touchTime = 0;
+
+        var touch = e.touches[0];
+        var x = touch.pageX;
+        var y = touch.pageY;
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.beginPath();
+        ctx.arc(x, y, 50, 0, Math.PI * 2, false);
+        ctx.fillStyle = "#2f8016";
+        ctx.fill();
+        ctx.closePath();
+    }
+});
+
+document.addEventListener("touchend", function(e) {
+    isTouch = false;
 });
