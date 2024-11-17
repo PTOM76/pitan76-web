@@ -1,0 +1,121 @@
+<!-- License: CC0-1.0 (https://creativecommons.org/publicdomain/zero/1.0/deed.ja) -->
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="../../style.css" />
+        <title>Pitan76.NET</title>
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-HE7R17Z63N"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', 'G-HE7R17Z63N');
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+        <script src="../../main.js"></script>
+        <meta name='viewport' content='width=device-width, initial-scale=1'>
+        <link rel="icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-32x32.png" sizes="32x32">
+        <link rel="icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-192x192.png" sizes="192x192">
+        <link rel="apple-touch-icon" href="https://blog.pitan76.net/wp-content/uploads/2022/07/cropped-109135739-1-180x180.png">
+    </head>
+    <body background="../../bg_image.png">
+        <div>
+            <span style="float:left">
+            <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="ぴたん(@PitaQ_Modding)の個人サイト「Pitan76.NET」をツイート！" data-url="https://pitan76.net/terms.html" data-hashtags="Pitan76NET" data-lang="ja" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </span>
+            <span style="float:right">
+                <a target="_blank" href="https://twitter.com/PitaQ_Modding"><img style="width:24px;height:24px;" src="../../image/twitter.png" /></a>
+                <a target="_blank" href="https://www.youtube.com/@pitaq8539"><img style="width:24px;height:24px;" src="../../image/youtube.png" /></a>
+                <a target="_blank" href="https://github.com/PTOM76"><img style="width:24px;height:24px;" src="../../image/github.png" /></a>
+                <a href="javascript:copy2board('00438')"><img style="width:24px;height:24px;" src="../../image/discord.png" /></a>
+            </span>
+            <br />
+        </div>
+        <div class="title">
+            <h2>Pitan76.NET</h2>
+            <span style="color:white;"><a href="../../">トップ</a> > <a href="../">Webツール</a> > Minecraft > Model Loader</span>
+        </div>
+
+        <div class="main">
+            <div class="contents">
+                <h3>Model Loader</h3>
+                <div style="text-align: left; font-size: 15px;">
+                    <p>
+                        Generate a image from model and textures on the web <br />
+                        The model is file with extension .json. The texture is file with extension .png. <br />
+                        Part of the model is not supported. <br />
+                        <br />
+
+                        <h4 class="modern">Model</h4>
+
+                        <select id="model" style="font-size: 15px;">
+                            <option value="block/cube">block/cube</option>
+                            <option value="block/block">block/block</option>
+                        </select>
+
+                        or
+
+                        <input type="file" id="model" accept=".json" style="font-size: 15px;"/>
+
+                        <br />
+                        <br />
+                        <br />
+
+                        <div id="texture" style="display: none;">
+                            <h4 class="modern">Textures</h4>
+
+                        </div>
+
+                    </p>
+
+                    <div id="output" style="text-align: center;">
+                        <img id="output_image" src="" style="display: none;"/>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p id="footer" style="color:white;">Copyright ©2023-2024 Pitan | E-mail: admin@pitan76.net<br /><a href="../terms.html">利用規約</a> | <a href="../changelog.html">更新履歴</a> | <a href="../contact.html">連絡</a></p>
+        </div>
+
+        <script>
+            $("#model").change(function() {
+                var file = $(this).prop("files")[0];
+                if (file.type != "application/json") {
+                    alert("ファイル形式が正しくありません。");
+                    return;
+                }
+
+                $("#texture").css("display", "block");
+
+                var reader = new FileReader();
+                reader.readAsText(file);
+
+                reader.onload = function(e) {
+                    var json = JSON.parse(e.target.result);
+                    var textures = json.textures;
+                    for (var key in textures) {
+                        var texture = textures[key];
+                        var input = $("<input type=\"file\" accept=\".png\" style=\"font-size: 15px;\"/>");
+
+                        input.change(function() {
+                            var file = $(this).prop("files")[0];
+                            var reader = new FileReader();
+                            reader.onload = function(e) {
+                                var img = $("<img src='" + e.target.result + "' style='width: 100px; height: 100px;'/>");
+                                $("#texture").append(img);
+                            };
+                            reader.readAsDataURL(file);
+                        });
+                        $("#texture").append("<span>" + key + ": </span>");
+                        $("#texture").append(input);
+                        $("#texture").append("<br />");
+                    }
+                };
+            });
+        </script>
+    </body>
+</html>
