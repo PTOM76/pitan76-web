@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>動画比較ツール</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f0f2f5;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h1 {
+            color: #007bff;
+            margin-bottom: 30px;
+        }
+        .container {
+            display: flex;
+            gap: 30px; /* 動画間のスペース */
+            flex-wrap: wrap; /* 画面幅が狭い場合に折り返す */
+            justify-content: center; /* 中央揃え */
+            width: 100%;
+            max-width: 1600px; /* 最大幅 */
+        }
+        .video-wrapper {
+            border: 1px solid #ddd;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            flex: 1; /* フレックスアイテムとして均等に幅を占める */
+            min-width: 300px; /* 最小幅を設定 */
+            max-width: 750px; /* 最大幅（コンテナの半分より少し小さい程度） */
+            display: flex;
+            flex-direction: column;
+        }
+        .video-wrapper h2 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            color: #333;
+            font-size: 1.5em;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
+        }
+        video {
+            width: 100%;
+            height: auto; /* アスペクト比を維持 */
+            max-height: 450px; /* 動画の最大高さを制限 */
+            background-color: #000;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .controls {
+            margin-top: 10px;
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+        .control-group {
+            display: flex;
+            flex-direction: column;
+        }
+        .controls label {
+            margin-bottom: 6px;
+            font-weight: bold;
+            color: #555;
+        }
+        .controls input[type="file"],
+        .controls input[type="number"] {
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 1em;
+        }
+        .controls input[type="file"] {
+            cursor: pointer;
+        }
+        .controls input[type="number"] {
+            width: 100px; /* 幅を少し広げる */
+        }
+        .controls button {
+            padding: 12px 18px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 1em;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .controls button:hover {
+            background-color: #0056b3;
+        }
+        .controls button:active {
+            background-color: #004085;
+        }
+
+        /* レスポンシブ対応 */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .video-wrapper {
+                width: 90%;
+                max-width: none; /* スマホでは最大幅制限を解除 */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>🎬 動画比較ツール 🎞️</h1>
+
+    <div class="container">
+        <div class="video-wrapper" id="video-wrapper1">
+            <h2>動画 1</h2>
+            <video id="video1" controls></video>
+            <div class="controls">
+                <div class="control-group">
+                    <label for="file1">ファイル選択:</label>
+                    <input type="file" id="file1" accept="video/*">
+                </div>
+                <div class="control-group">
+                    <label for="time1">再生位置 (秒):</label>
+                    <input type="number" id="time1" min="0" step="0.1" value="0" placeholder="例: 30.5">
+                </div>
+                <button id="seek1">指定位置へ移動</button>
+            </div>
+        </div>
+
+        <div class="video-wrapper" id="video-wrapper2">
+            <h2>動画 2</h2>
+            <video id="video2" controls></video>
+            <div class="controls">
+                <div class="control-group">
+                    <label for="file2">ファイル選択:</label>
+                    <input type="file" id="file2" accept="video/*">
+                </div>
+                <div class="control-group">
+                    <label for="time2">再生位置 (秒):</label>
+                    <input type="number" id="time2" min="0" step="0.1" value="0" placeholder="例: 10.2">
+                </div>
+                <button id="seek2">指定位置へ移動</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // 動画1の要素を取得
+            const video1 = document.getElementById('video1');
+            const file1Input = document.getElementById('file1');
+            const time1Input = document.getElementById('time1');
+            const seek1Button = document.getElementById('seek1');
+
+            // 動画2の要素を取得
+            const video2 = document.getElementById('video2');
+            const file2Input = document.getElementById('file2');
+            const time2Input = document.getElementById('time2');
+            const seek2Button = document.getElementById('seek2');
+
+            /**
+             * ファイル入力から動画を読み込む関数
+             * @param {HTMLInputElement} fileInputElement - ファイル選択用のinput要素
+             * @param {HTMLVideoElement} videoElement - 動画を表示するvideo要素
+             * @param {HTMLInputElement} timeInputElement - 再生時間入力用のinput要素
+             */
+            function loadVideo(fileInputElement, videoElement, timeInputElement) {
+                fileInputElement.addEventListener('change', (event) => {
+                    const file = event.target.files[0];
+                    if (file) {
+                        const fileURL = URL.createObjectURL(file);
+                        videoElement.src = fileURL;
+                        // 動画のメタデータが読み込まれたら、再生時間入力のmax値を設定
+                        videoElement.onloadedmetadata = () => {
+                            if (videoElement.duration && isFinite(videoElement.duration)) {
+                                timeInputElement.max = videoElement.duration.toFixed(1);
+                            }
+                        };
+                        // 必要であれば、URL.revokeObjectURL(fileURL) を適切なタイミングで呼び出す
+                        // (例: 新しい動画が読み込まれる前、ページがアンロードされる前など)
+                        // ここではシンプルさのため省略
+                    }
+                });
+            }
+
+            /**
+             * 指定した時間に動画をシークする関数
+             * @param {HTMLVideoElement} videoElement - 対象のvideo要素
+             * @param {HTMLInputElement} timeInputElement - 再生時間入力用のinput要素
+             */
+            function seekVideo(videoElement, timeInputElement) {
+                if (!videoElement.src || videoElement.src === '' || videoElement.src === window.location.href ) { // srcが空またはプレースホルダー状態
+                    alert( (videoElement.id === 'video1' ? '動画1' : '動画2') + 'に動画が読み込まれていません。ファイルを選択してください。');
+                    return;
+                }
+
+                const time = parseFloat(timeInputElement.value);
+                if (isNaN(time)) {
+                    alert('有効な数値を秒単位で入力してください (例: 15.5)。');
+                    return;
+                }
+                 if (time < 0) {
+                    alert('再生位置は0以上の数値を入力してください。');
+                    return;
+                }
+
+                // readyState: 0=HAVE_NOTHING, 1=HAVE_METADATA, 2=HAVE_CURRENT_DATA, 3=HAVE_FUTURE_DATA, 4=HAVE_ENOUGH_DATA
+                if (videoElement.readyState >= 1) { // HAVE_METADATA (メタデータがあればcurrentTimeを設定可能)
+                    videoElement.currentTime = time;
+                } else {
+                    // メタデータがまだ読み込まれていない場合、loadedmetadataイベントを一度だけ待つ
+                    const seekOnLoad = () => {
+                        videoElement.currentTime = time;
+                        videoElement.removeEventListener('loadedmetadata', seekOnLoad); // 実行後リスナー削除
+                    };
+                    videoElement.addEventListener('loadedmetadata', seekOnLoad);
+                    // ユーザーに読み込み中であることを伝えるメッセージ (任意)
+                    // console.log( (videoElement.id === 'video1' ? '動画1' : '動画2') + ' のメタデータを読み込み中です。完了後にシークします。');
+                }
+            }
+
+            // イベントリスナーを設定
+            loadVideo(file1Input, video1, time1Input);
+            loadVideo(file2Input, video2, time2Input);
+
+            seek1Button.addEventListener('click', () => seekVideo(video1, time1Input));
+            seek2Button.addEventListener('click', () => seekVideo(video2, time2Input));
+
+            // Enterキーでもシークできるようにする
+            time1Input.addEventListener('keypress', (event) => {
+                if (event.key === 'Enter') {
+                    event.preventDefault(); // フォームの送信などデフォルト動作を抑制
+                    seekVideo(video1, time1Input);
+                }
+            });
+            time2Input.addEventListener('keypress', (event) => {
+                if (event.key === 'Enter') {
+                    event.preventDefault();
+                    seekVideo(video2, time2Input);
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
